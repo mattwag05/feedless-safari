@@ -23,6 +23,7 @@
 		25138F31F02C3A0A232B41AE /* youtube_music.css in Resources */ = {isa = PBXBuildFile; fileRef = B5C487E1452214C8420AAC8D /* youtube_music.css */; };
 		278511528C04765845ADB4E6 /* options-KCc7K7Kd.js in Resources */ = {isa = PBXBuildFile; fileRef = 0481AE8726A8676A03311CA7 /* options-KCc7K7Kd.js */; };
 		2C469C9F9CAB5B7991109BC7 /* youtube_music.js in Resources */ = {isa = PBXBuildFile; fileRef = B5AD59D0D561F9FF424A8DFD /* youtube_music.js */; };
+		2D84B32379214287FA129481 /* manifest.json.bak in Resources */ = {isa = PBXBuildFile; fileRef = 787F760FDEB8D131FDACAF5A /* manifest.json.bak */; };
 		361618654CE660E0262A7469 /* youtube.js in Resources */ = {isa = PBXBuildFile; fileRef = FD261681B8B6FABD2099A830 /* youtube.js */; };
 		378EDB5E874422123207D470 /* linkedin.js in Resources */ = {isa = PBXBuildFile; fileRef = F219000FB4518DB5392C2C0C /* linkedin.js */; };
 		3B901B1ED06C9D097A23CA1E /* substack.js in Resources */ = {isa = PBXBuildFile; fileRef = 72A7AFDDFB4C85EFF1D9B62A /* substack.js */; };
@@ -35,6 +36,7 @@
 		4E1CCAE95BCBEAF9592BD0C7 /* facebook.css in Resources */ = {isa = PBXBuildFile; fileRef = FE46447762C564A31E961B4C /* facebook.css */; };
 		5206DD2EB3A228D1A235FC07 /* 16.png in Resources */ = {isa = PBXBuildFile; fileRef = FF07051FD4A8BE81438D4F86 /* 16.png */; };
 		531B51FF4788BB57EA7B9FA0 /* linkedin.css in Resources */ = {isa = PBXBuildFile; fileRef = 465CE3D04B8D4DB90B881DCE /* linkedin.css */; };
+		552C520D400EBB665B975BD4 /* bridge.js in Resources */ = {isa = PBXBuildFile; fileRef = 7D864A364379FF3C0BBFA037 /* bridge.js */; };
 		553FE631207B00B1B3415DC0 /* reddit.css in Resources */ = {isa = PBXBuildFile; fileRef = 1444E4E3E49EF0A2093FA8A3 /* reddit.css */; };
 		5B398EFB6D41C611C8EC10EB /* pinterest.css in Resources */ = {isa = PBXBuildFile; fileRef = CA90D58B178A1D059914F19B /* pinterest.css */; };
 		5BD75046740E411345AAB776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC104523D667988C74BA810C /* Assets.xcassets */; };
@@ -50,6 +52,7 @@
 		791C805EAF89AC71EDDCAE66 /* 16.png in Resources */ = {isa = PBXBuildFile; fileRef = FF07051FD4A8BE81438D4F86 /* 16.png */; };
 		7E443C18BCED598BB7842E86 /* youtube_mobile.css in Resources */ = {isa = PBXBuildFile; fileRef = 9FB2A2987F6DFE40DAA69CE3 /* youtube_mobile.css */; };
 		7F25D1E60541F4A2690330A2 /* popup-CCvSkTNe.js in Resources */ = {isa = PBXBuildFile; fileRef = 83D8566B60973530D442CA6E /* popup-CCvSkTNe.js */; };
+		80E34712C8159229395F3D81 /* bridge.js in Resources */ = {isa = PBXBuildFile; fileRef = 7D864A364379FF3C0BBFA037 /* bridge.js */; };
 		82884F4C3B43C195C6F5CF9B /* facebook.css in Resources */ = {isa = PBXBuildFile; fileRef = FE46447762C564A31E961B4C /* facebook.css */; };
 		847D269B0D05262898EEA1F0 /* bsky.css in Resources */ = {isa = PBXBuildFile; fileRef = 7A11E86D9CC6C9D20132A5BD /* bsky.css */; };
 		852676B8555BC4469368C586 /* 128.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D220AA068DAC5BF5A8F826C /* 128.png */; };
@@ -57,6 +60,7 @@
 		8B013701959918F3FDB91687 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 7996A72EDD734CB805ADEE07 /* popup.html */; };
 		8BC3655CF807B6AA72930C55 /* 32.png in Resources */ = {isa = PBXBuildFile; fileRef = 83FF51AEAD88198D5A4595F9 /* 32.png */; };
 		8C7486EEF9F77EE45AFECB03 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B623647ADF849A3575D29 /* SettingsView.swift */; };
+		8CB9F4D41B6643FAFC4F5E90 /* manifest.json.bak in Resources */ = {isa = PBXBuildFile; fileRef = 787F760FDEB8D131FDACAF5A /* manifest.json.bak */; };
 		8D53770B25BA6D57C8F26A67 /* youtube_mobile.css in Resources */ = {isa = PBXBuildFile; fileRef = 9FB2A2987F6DFE40DAA69CE3 /* youtube_mobile.css */; };
 		8EA3F4B858D5F94F122DFE8C /* youtube_mobile.js in Resources */ = {isa = PBXBuildFile; fileRef = ADDC2C0BE4378D6AC9920CB3 /* youtube_mobile.js */; };
 		8F68FD4550CAD06F2155B68E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D39AD63BC6E1C514020397 /* SettingsView.swift */; };
@@ -161,10 +165,12 @@
 		6AB98E4A0F5F524558C84687 /* FeedlessSafari iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "FeedlessSafari iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DADBFA26E8626E972450766 /* substack.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = substack.css; sourceTree = "<group>"; };
 		72A7AFDDFB4C85EFF1D9B62A /* substack.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = substack.js; sourceTree = "<group>"; };
+		787F760FDEB8D131FDACAF5A /* manifest.json.bak */ = {isa = PBXFileReference; path = manifest.json.bak; sourceTree = "<group>"; };
 		78C19E9D4ED5D8876FB1D638 /* tiktok.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = tiktok.css; sourceTree = "<group>"; };
 		7996A72EDD734CB805ADEE07 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
 		7A11E86D9CC6C9D20132A5BD /* bsky.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = bsky.css; sourceTree = "<group>"; };
 		7D220AA068DAC5BF5A8F826C /* 128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 128.png; sourceTree = "<group>"; };
+		7D864A364379FF3C0BBFA037 /* bridge.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = bridge.js; sourceTree = "<group>"; };
 		80AE03E9261F8CBAA79A809A /* facebook.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = facebook.js; sourceTree = "<group>"; };
 		83D8566B60973530D442CA6E /* popup-CCvSkTNe.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "popup-CCvSkTNe.js"; sourceTree = "<group>"; };
 		83FF51AEAD88198D5A4595F9 /* 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32.png; sourceTree = "<group>"; };
@@ -264,8 +270,10 @@
 				262A1F6C6D50EFB4AF5ABD91 /* content-scripts */,
 				31A3E4302849E1F6BAB38A71 /* icons */,
 				177CE54B55BE9AC6C61BB886 /* background.js */,
+				7D864A364379FF3C0BBFA037 /* bridge.js */,
 				3B10E4799D8BB62D7675145A /* icon.svg */,
 				27DE6E21F6A97EA8408034ED /* manifest.json */,
+				787F760FDEB8D131FDACAF5A /* manifest.json.bak */,
 				5FA7D3B081DD869169E9BB70 /* options.html */,
 				7996A72EDD734CB805ADEE07 /* popup.html */,
 			);
@@ -484,6 +492,7 @@
 				8BC3655CF807B6AA72930C55 /* 32.png in Resources */,
 				72BD5D2E1316F56E4BBB205B /* 48.png in Resources */,
 				F91021F07CAE02BE1B94BC9F /* background.js in Resources */,
+				552C520D400EBB665B975BD4 /* bridge.js in Resources */,
 				847D269B0D05262898EEA1F0 /* bsky.css in Resources */,
 				15272D7A20361062B5C15132 /* bsky.js in Resources */,
 				82884F4C3B43C195C6F5CF9B /* facebook.css in Resources */,
@@ -494,6 +503,7 @@
 				962C810ECFF4C3E69DC7D27B /* linkedin.css in Resources */,
 				9E741390FC32C6C3326E600A /* linkedin.js in Resources */,
 				1D5265B97239FE9B1C829353 /* manifest.json in Resources */,
+				8CB9F4D41B6643FAFC4F5E90 /* manifest.json.bak in Resources */,
 				D608F5D1E1235F8410347DE8 /* optionSection-B1B0dc4m.js in Resources */,
 				1F4A72446C04AA389D0FFD20 /* optionSection-ud_yRWna.css in Resources */,
 				278511528C04765845ADB4E6 /* options-KCc7K7Kd.js in Resources */,
@@ -536,6 +546,7 @@
 				B57DDD941E817D718A2DC718 /* 32.png in Resources */,
 				D9DFA6F1C6E11A54A2D6AAB2 /* 48.png in Resources */,
 				F944C3F50AFF4E5E4F021AFE /* background.js in Resources */,
+				80E34712C8159229395F3D81 /* bridge.js in Resources */,
 				EAF25D6043C5C200AFE8C98B /* bsky.css in Resources */,
 				0DCA2744BAB6CB987CCBAD08 /* bsky.js in Resources */,
 				4E1CCAE95BCBEAF9592BD0C7 /* facebook.css in Resources */,
@@ -546,6 +557,7 @@
 				531B51FF4788BB57EA7B9FA0 /* linkedin.css in Resources */,
 				378EDB5E874422123207D470 /* linkedin.js in Resources */,
 				A6FD57AEF38D7D96C955E39B /* manifest.json in Resources */,
+				2D84B32379214287FA129481 /* manifest.json.bak in Resources */,
 				6EFA4E14BE918AF3B9D52188 /* optionSection-B1B0dc4m.js in Resources */,
 				A18B27D7F72C860CE340C0EF /* optionSection-ud_yRWna.css in Resources */,
 				0F545FBDE9020F8083EFC030 /* options-KCc7K7Kd.js in Resources */,
