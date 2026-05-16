@@ -1,0 +1,98 @@
+name: FeedlessSafari
+options:
+  bundleIdPrefix: com.mattwagner.feedless-safari
+  deploymentTarget:
+    iOS: "15.0"
+    macOS: "13.0"
+  createIntermediateGroups: false
+  groupSortPosition: top
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    CLANG_ENABLE_OBJC_ARC: YES
+    CURRENT_PROJECT_VERSION: 1
+
+configs:
+  Debug: debug
+  Release: release
+
+targets:
+  FeedlessSafari macOS:
+    type: application
+    platform: macOS
+    settings:
+      base:
+        PRODUCT_NAME: FeedlessSafari
+        PRODUCT_BUNDLE_IDENTIFIER: com.mattwagner.feedless-safari
+        CODE_SIGN_STYLE: Automatic
+        COMBINE_HIDPI_IMAGES: YES
+        INFOPLIST_FILE: "macOS (App)/Info.plist"
+    info:
+      path: macOS (App)/Info.plist
+    sources:
+      - path: Shared (App)
+      - path: macOS (App)
+    dependencies:
+      - target: FeedlessSafari macOS Extension
+        embed: true
+        codeSignOnCopy: true
+        removeHeadersOnCopy: true
+
+  FeedlessSafari iOS:
+    type: application
+    platform: iOS
+    settings:
+      base:
+        PRODUCT_NAME: FeedlessSafari
+        PRODUCT_BUNDLE_IDENTIFIER: com.mattwagner.feedless-safari
+        CODE_SIGN_STYLE: Automatic
+        TARGETED_DEVICE_FAMILY: "1,2"
+        INFOPLIST_FILE: "iOS (App)/Info.plist"
+    info:
+      path: iOS (App)/Info.plist
+    sources:
+      - path: Shared (App)
+      - path: iOS (App)
+    dependencies:
+      - target: FeedlessSafari iOS Extension
+        embed: true
+        codeSignOnCopy: true
+        removeHeadersOnCopy: true
+
+  FeedlessSafari macOS Extension:
+    type: app-extension
+    platform: macOS
+    settings:
+      base:
+        PRODUCT_NAME: "FeedlessSafari Extension"
+        PRODUCT_BUNDLE_IDENTIFIER: com.mattwagner.feedless-safari.Extension
+        CODE_SIGN_STYLE: Automatic
+        INFOPLIST_FILE: "macOS (Extension)/Info.plist"
+    info:
+      path: macOS (Extension)/Info.plist
+    sources:
+      - Shared (Extension)
+    resources:
+      - path: Shared (Extension)/Resources
+        type: folder
+    dependencies:
+      - sdk: SafariServices.framework
+
+  FeedlessSafari iOS Extension:
+    type: app-extension
+    platform: iOS
+    settings:
+      base:
+        PRODUCT_NAME: "FeedlessSafari Extension"
+        PRODUCT_BUNDLE_IDENTIFIER: com.mattwagner.feedless-safari.Extension
+        CODE_SIGN_STYLE: Automatic
+        TARGETED_DEVICE_FAMILY: "1,2"
+        INFOPLIST_FILE: "iOS (Extension)/Info.plist"
+    info:
+      path: iOS (Extension)/Info.plist
+    sources:
+      - Shared (Extension)
+    resources:
+      - path: Shared (Extension)/Resources
+        type: folder

@@ -1,0 +1,2 @@
+:root[bsky-hide-feed=true][page-path=\/] main{display:none}:root[bsky-hide-feed=true] a[href=\/feeds]{display:none!important}:root[bsky-hide-trending=true] [href*=trending],:root[bsky-hide-explore-feed][page-path="/search/"]:not([page-params*=q\=]) div:has([href*=profile]):not(:has(nav,input)){display:none}
+/*$vite$:1*/

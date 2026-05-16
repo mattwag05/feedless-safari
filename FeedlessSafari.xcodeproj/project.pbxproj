@@ -1,0 +1,947 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		038B56758C1AA8065574492A /* instagram.js in Resources */ = {isa = PBXBuildFile; fileRef = 2065DBC1035B5CB6250D5C02 /* instagram.js */; };
+		0610877CF3A7A46DB6B2E480 /* youtube.css in Resources */ = {isa = PBXBuildFile; fileRef = 383F8E6EE9F642EF8D049AB8 /* youtube.css */; };
+		088BE260C5665F3508B8DCFF /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BED776385A7D7E9C7DB3964 /* SettingsModel.swift */; };
+		09C63A6ECEC9C29C3AD1B83C /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = 5FA7D3B081DD869169E9BB70 /* options.html */; };
+		0DCA2744BAB6CB987CCBAD08 /* bsky.js in Resources */ = {isa = PBXBuildFile; fileRef = 9503DCE9EA68F58FD4182F6A /* bsky.js */; };
+		0F139CEB67697EB5930C4C60 /* twitter.js in Resources */ = {isa = PBXBuildFile; fileRef = 59B2EC5B7D8E9E1CD0936575 /* twitter.js */; };
+		0F545FBDE9020F8083EFC030 /* options-KCc7K7Kd.js in Resources */ = {isa = PBXBuildFile; fileRef = 0481AE8726A8676A03311CA7 /* options-KCc7K7Kd.js */; };
+		10FBEE91B2585895FD577580 /* twitter.js in Resources */ = {isa = PBXBuildFile; fileRef = 59B2EC5B7D8E9E1CD0936575 /* twitter.js */; };
+		1313EED521FAA4F92B1636E6 /* icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 3B10E4799D8BB62D7675145A /* icon.svg */; };
+		15272D7A20361062B5C15132 /* bsky.js in Resources */ = {isa = PBXBuildFile; fileRef = 9503DCE9EA68F58FD4182F6A /* bsky.js */; };
+		1D22C2F33D5FA4E4AB7259F3 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = 5FA7D3B081DD869169E9BB70 /* options.html */; };
+		1D5265B97239FE9B1C829353 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 27DE6E21F6A97EA8408034ED /* manifest.json */; };
+		1F4A72446C04AA389D0FFD20 /* optionSection-ud_yRWna.css in Resources */ = {isa = PBXBuildFile; fileRef = 1AA2F76D0134D50FCE4A8557 /* optionSection-ud_yRWna.css */; };
+		25138F31F02C3A0A232B41AE /* youtube_music.css in Resources */ = {isa = PBXBuildFile; fileRef = B5C487E1452214C8420AAC8D /* youtube_music.css */; };
+		278511528C04765845ADB4E6 /* options-KCc7K7Kd.js in Resources */ = {isa = PBXBuildFile; fileRef = 0481AE8726A8676A03311CA7 /* options-KCc7K7Kd.js */; };
+		2C469C9F9CAB5B7991109BC7 /* youtube_music.js in Resources */ = {isa = PBXBuildFile; fileRef = B5AD59D0D561F9FF424A8DFD /* youtube_music.js */; };
+		361618654CE660E0262A7469 /* youtube.js in Resources */ = {isa = PBXBuildFile; fileRef = FD261681B8B6FABD2099A830 /* youtube.js */; };
+		378EDB5E874422123207D470 /* linkedin.js in Resources */ = {isa = PBXBuildFile; fileRef = F219000FB4518DB5392C2C0C /* linkedin.js */; };
+		3B901B1ED06C9D097A23CA1E /* substack.js in Resources */ = {isa = PBXBuildFile; fileRef = 72A7AFDDFB4C85EFF1D9B62A /* substack.js */; };
+		3BABAC766EF1BCAF32FFF0B4 /* 128.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D220AA068DAC5BF5A8F826C /* 128.png */; };
+		3F1E62D5E4092838F3FCD738 /* twitter.css in Resources */ = {isa = PBXBuildFile; fileRef = 59212BE65D6C0B62CFDE530D /* twitter.css */; };
+		41EBD2878CD35FC19653683B /* FeedlessSafari iOS Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C241AF31B95A62C15414B79D /* FeedlessSafari iOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		432F7DB8FC689C98443227BF /* pinterest.css in Resources */ = {isa = PBXBuildFile; fileRef = CA90D58B178A1D059914F19B /* pinterest.css */; };
+		4B9D0E3E50C9A28CCD61623F /* youtube.css in Resources */ = {isa = PBXBuildFile; fileRef = 383F8E6EE9F642EF8D049AB8 /* youtube.css */; };
+		4DD12BBC17C78452D50116F5 /* youtube.js in Resources */ = {isa = PBXBuildFile; fileRef = FD261681B8B6FABD2099A830 /* youtube.js */; };
+		4E1CCAE95BCBEAF9592BD0C7 /* facebook.css in Resources */ = {isa = PBXBuildFile; fileRef = FE46447762C564A31E961B4C /* facebook.css */; };
+		5206DD2EB3A228D1A235FC07 /* 16.png in Resources */ = {isa = PBXBuildFile; fileRef = FF07051FD4A8BE81438D4F86 /* 16.png */; };
+		531B51FF4788BB57EA7B9FA0 /* linkedin.css in Resources */ = {isa = PBXBuildFile; fileRef = 465CE3D04B8D4DB90B881DCE /* linkedin.css */; };
+		553FE631207B00B1B3415DC0 /* reddit.css in Resources */ = {isa = PBXBuildFile; fileRef = 1444E4E3E49EF0A2093FA8A3 /* reddit.css */; };
+		5B398EFB6D41C611C8EC10EB /* pinterest.css in Resources */ = {isa = PBXBuildFile; fileRef = CA90D58B178A1D059914F19B /* pinterest.css */; };
+		5BD75046740E411345AAB776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC104523D667988C74BA810C /* Assets.xcassets */; };
+		5D8F5162E0DC597934568F58 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3A82B5B6AF09AD813555B /* SafariWebExtensionHandler.swift */; };
+		5FE020896F1659CCF8396911 /* facebook.js in Resources */ = {isa = PBXBuildFile; fileRef = 80AE03E9261F8CBAA79A809A /* facebook.js */; };
+		6E049D37DF6BFA693965B461 /* instagram.css in Resources */ = {isa = PBXBuildFile; fileRef = C3D3F20809B04AA6E755CAC5 /* instagram.css */; };
+		6EFA4E14BE918AF3B9D52188 /* optionSection-B1B0dc4m.js in Resources */ = {isa = PBXBuildFile; fileRef = 66AD817CD44C9414FD944B07 /* optionSection-B1B0dc4m.js */; };
+		7065845158A745A9C4AD77C2 /* FeedlessSafari macOS Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DD39A3EA02FDDC092C6CCC19 /* FeedlessSafari macOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7286E050CF25F857F5948C18 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BED776385A7D7E9C7DB3964 /* SettingsModel.swift */; };
+		72BD5D2E1316F56E4BBB205B /* 48.png in Resources */ = {isa = PBXBuildFile; fileRef = C61CB0D4DF3CF9598C54DE21 /* 48.png */; };
+		734880BF973FF883AE508FC1 /* reddit.js in Resources */ = {isa = PBXBuildFile; fileRef = 081205514FA60CA6D3394A02 /* reddit.js */; };
+		7585D64F93A6F8E90C1D8E8F /* substack.js in Resources */ = {isa = PBXBuildFile; fileRef = 72A7AFDDFB4C85EFF1D9B62A /* substack.js */; };
+		791C805EAF89AC71EDDCAE66 /* 16.png in Resources */ = {isa = PBXBuildFile; fileRef = FF07051FD4A8BE81438D4F86 /* 16.png */; };
+		7E443C18BCED598BB7842E86 /* youtube_mobile.css in Resources */ = {isa = PBXBuildFile; fileRef = 9FB2A2987F6DFE40DAA69CE3 /* youtube_mobile.css */; };
+		7F25D1E60541F4A2690330A2 /* popup-CCvSkTNe.js in Resources */ = {isa = PBXBuildFile; fileRef = 83D8566B60973530D442CA6E /* popup-CCvSkTNe.js */; };
+		82884F4C3B43C195C6F5CF9B /* facebook.css in Resources */ = {isa = PBXBuildFile; fileRef = FE46447762C564A31E961B4C /* facebook.css */; };
+		847D269B0D05262898EEA1F0 /* bsky.css in Resources */ = {isa = PBXBuildFile; fileRef = 7A11E86D9CC6C9D20132A5BD /* bsky.css */; };
+		852676B8555BC4469368C586 /* 128.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D220AA068DAC5BF5A8F826C /* 128.png */; };
+		8716145694613362DEA70654 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 7996A72EDD734CB805ADEE07 /* popup.html */; };
+		8B013701959918F3FDB91687 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 7996A72EDD734CB805ADEE07 /* popup.html */; };
+		8BC3655CF807B6AA72930C55 /* 32.png in Resources */ = {isa = PBXBuildFile; fileRef = 83FF51AEAD88198D5A4595F9 /* 32.png */; };
+		8C7486EEF9F77EE45AFECB03 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B623647ADF849A3575D29 /* SettingsView.swift */; };
+		8D53770B25BA6D57C8F26A67 /* youtube_mobile.css in Resources */ = {isa = PBXBuildFile; fileRef = 9FB2A2987F6DFE40DAA69CE3 /* youtube_mobile.css */; };
+		8EA3F4B858D5F94F122DFE8C /* youtube_mobile.js in Resources */ = {isa = PBXBuildFile; fileRef = ADDC2C0BE4378D6AC9920CB3 /* youtube_mobile.js */; };
+		8F68FD4550CAD06F2155B68E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D39AD63BC6E1C514020397 /* SettingsView.swift */; };
+		962C810ECFF4C3E69DC7D27B /* linkedin.css in Resources */ = {isa = PBXBuildFile; fileRef = 465CE3D04B8D4DB90B881DCE /* linkedin.css */; };
+		9E741390FC32C6C3326E600A /* linkedin.js in Resources */ = {isa = PBXBuildFile; fileRef = F219000FB4518DB5392C2C0C /* linkedin.js */; };
+		A18B27D7F72C860CE340C0EF /* optionSection-ud_yRWna.css in Resources */ = {isa = PBXBuildFile; fileRef = 1AA2F76D0134D50FCE4A8557 /* optionSection-ud_yRWna.css */; };
+		A6FD57AEF38D7D96C955E39B /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 27DE6E21F6A97EA8408034ED /* manifest.json */; };
+		A82491FCAE5DEB79F71334F5 /* substack.css in Resources */ = {isa = PBXBuildFile; fileRef = 6DADBFA26E8626E972450766 /* substack.css */; };
+		A9A49CEA2EA1DEC7FE0D9BC6 /* tiktok.css in Resources */ = {isa = PBXBuildFile; fileRef = 78C19E9D4ED5D8876FB1D638 /* tiktok.css */; };
+		AF4768695C4EF337D8F8419E /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3A82B5B6AF09AD813555B /* SafariWebExtensionHandler.swift */; };
+		B5440ADF12F55A84C3D810BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20186AC9B8809FB29F7AAFB8 /* AppDelegate.swift */; };
+		B56BDD9993BF7EAEB4FE80C2 /* youtube_music.css in Resources */ = {isa = PBXBuildFile; fileRef = B5C487E1452214C8420AAC8D /* youtube_music.css */; };
+		B56DACDF355A419122BE74AA /* tiktok.js in Resources */ = {isa = PBXBuildFile; fileRef = B5BCFC939CC2001BB3CC5EB5 /* tiktok.js */; };
+		B57DDD941E817D718A2DC718 /* 32.png in Resources */ = {isa = PBXBuildFile; fileRef = 83FF51AEAD88198D5A4595F9 /* 32.png */; };
+		B7090F5E5CA334ADAABE1DCA /* tiktok.css in Resources */ = {isa = PBXBuildFile; fileRef = 78C19E9D4ED5D8876FB1D638 /* tiktok.css */; };
+		BB075F63A65E079ADFC6CE83 /* instagram.js in Resources */ = {isa = PBXBuildFile; fileRef = 2065DBC1035B5CB6250D5C02 /* instagram.js */; };
+		C6E93F15FC3E7B4F1A22D900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252119F957D346359C8951BA /* AppDelegate.swift */; };
+		C728B52F3AB9603DDB0C5628 /* substack.css in Resources */ = {isa = PBXBuildFile; fileRef = 6DADBFA26E8626E972450766 /* substack.css */; };
+		C772926933244D59717B7B1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC104523D667988C74BA810C /* Assets.xcassets */; };
+		C9A78AA6F0A5B5E57F6A7207 /* reddit.css in Resources */ = {isa = PBXBuildFile; fileRef = 1444E4E3E49EF0A2093FA8A3 /* reddit.css */; };
+		CBCF8DA9C028FBBE754CA978 /* youtube_mobile.js in Resources */ = {isa = PBXBuildFile; fileRef = ADDC2C0BE4378D6AC9920CB3 /* youtube_mobile.js */; };
+		CD3E72622DC9C6FFCA127887 /* pinterest.js in Resources */ = {isa = PBXBuildFile; fileRef = 21A2A2EFC6F71A59410CD287 /* pinterest.js */; };
+		CE1AEEE5AE299AF2EDFB5D68 /* instagram.css in Resources */ = {isa = PBXBuildFile; fileRef = C3D3F20809B04AA6E755CAC5 /* instagram.css */; };
+		D608F5D1E1235F8410347DE8 /* optionSection-B1B0dc4m.js in Resources */ = {isa = PBXBuildFile; fileRef = 66AD817CD44C9414FD944B07 /* optionSection-B1B0dc4m.js */; };
+		D9DFA6F1C6E11A54A2D6AAB2 /* 48.png in Resources */ = {isa = PBXBuildFile; fileRef = C61CB0D4DF3CF9598C54DE21 /* 48.png */; };
+		DC30C4969DF40C7FB0B0BE9C /* popup-CCvSkTNe.js in Resources */ = {isa = PBXBuildFile; fileRef = 83D8566B60973530D442CA6E /* popup-CCvSkTNe.js */; };
+		E56D66CF0DB5FA1622A24732 /* twitter.css in Resources */ = {isa = PBXBuildFile; fileRef = 59212BE65D6C0B62CFDE530D /* twitter.css */; };
+		E9C6BADF86FAC0DF860198FE /* icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 3B10E4799D8BB62D7675145A /* icon.svg */; };
+		EAF25D6043C5C200AFE8C98B /* bsky.css in Resources */ = {isa = PBXBuildFile; fileRef = 7A11E86D9CC6C9D20132A5BD /* bsky.css */; };
+		EBE432D732B6F140CB8290D6 /* reddit.js in Resources */ = {isa = PBXBuildFile; fileRef = 081205514FA60CA6D3394A02 /* reddit.js */; };
+		EE1B05705EFAB4289C5ABFE9 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B50EAA96FBAE1CCACC24C1 /* SafariServices.framework */; };
+		EEA0FAF1FA5409323A746FB9 /* tiktok.js in Resources */ = {isa = PBXBuildFile; fileRef = B5BCFC939CC2001BB3CC5EB5 /* tiktok.js */; };
+		F91021F07CAE02BE1B94BC9F /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 177CE54B55BE9AC6C61BB886 /* background.js */; };
+		F944C3F50AFF4E5E4F021AFE /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 177CE54B55BE9AC6C61BB886 /* background.js */; };
+		FA3731D4ADC746AE8EBEB903 /* youtube_music.js in Resources */ = {isa = PBXBuildFile; fileRef = B5AD59D0D561F9FF424A8DFD /* youtube_music.js */; };
+		FB007A1FF8A14AA1C28C80CF /* pinterest.js in Resources */ = {isa = PBXBuildFile; fileRef = 21A2A2EFC6F71A59410CD287 /* pinterest.js */; };
+		FC928F6631A3AE028A1F3302 /* facebook.js in Resources */ = {isa = PBXBuildFile; fileRef = 80AE03E9261F8CBAA79A809A /* facebook.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8804EC74836DB594018475E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61EED711B08BD71D9B06BF65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 598ADD220E41F2AEF269DB5F;
+			remoteInfo = "FeedlessSafari iOS Extension";
+		};
+		C6B005D11CA2A1ADA8D144FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61EED711B08BD71D9B06BF65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3591DB79A488984536972577;
+			remoteInfo = "FeedlessSafari macOS Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9593B35E62FF32336F2A3515 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7065845158A745A9C4AD77C2 /* FeedlessSafari macOS Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A2003F3EA383353151B199 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				41EBD2878CD35FC19653683B /* FeedlessSafari iOS Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0481AE8726A8676A03311CA7 /* options-KCc7K7Kd.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "options-KCc7K7Kd.js"; sourceTree = "<group>"; };
+		081205514FA60CA6D3394A02 /* reddit.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = reddit.js; sourceTree = "<group>"; };
+		1444E4E3E49EF0A2093FA8A3 /* reddit.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = reddit.css; sourceTree = "<group>"; };
+		177CE54B55BE9AC6C61BB886 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		17F3A82B5B6AF09AD813555B /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		1AA2F76D0134D50FCE4A8557 /* optionSection-ud_yRWna.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "optionSection-ud_yRWna.css"; sourceTree = "<group>"; };
+		1BED776385A7D7E9C7DB3964 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		20186AC9B8809FB29F7AAFB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2065DBC1035B5CB6250D5C02 /* instagram.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = instagram.js; sourceTree = "<group>"; };
+		21A2A2EFC6F71A59410CD287 /* pinterest.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = pinterest.js; sourceTree = "<group>"; };
+		252119F957D346359C8951BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27DE6E21F6A97EA8408034ED /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		383F8E6EE9F642EF8D049AB8 /* youtube.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = youtube.css; sourceTree = "<group>"; };
+		3B10E4799D8BB62D7675145A /* icon.svg */ = {isa = PBXFileReference; path = icon.svg; sourceTree = "<group>"; };
+		465CE3D04B8D4DB90B881DCE /* linkedin.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = linkedin.css; sourceTree = "<group>"; };
+		59212BE65D6C0B62CFDE530D /* twitter.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = twitter.css; sourceTree = "<group>"; };
+		59B2EC5B7D8E9E1CD0936575 /* twitter.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = twitter.js; sourceTree = "<group>"; };
+		5FA7D3B081DD869169E9BB70 /* options.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = options.html; sourceTree = "<group>"; };
+		66AD817CD44C9414FD944B07 /* optionSection-B1B0dc4m.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "optionSection-B1B0dc4m.js"; sourceTree = "<group>"; };
+		6AB98E4A0F5F524558C84687 /* FeedlessSafari iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "FeedlessSafari iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DADBFA26E8626E972450766 /* substack.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = substack.css; sourceTree = "<group>"; };
+		72A7AFDDFB4C85EFF1D9B62A /* substack.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = substack.js; sourceTree = "<group>"; };
+		78C19E9D4ED5D8876FB1D638 /* tiktok.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = tiktok.css; sourceTree = "<group>"; };
+		7996A72EDD734CB805ADEE07 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		7A11E86D9CC6C9D20132A5BD /* bsky.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = bsky.css; sourceTree = "<group>"; };
+		7D220AA068DAC5BF5A8F826C /* 128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 128.png; sourceTree = "<group>"; };
+		80AE03E9261F8CBAA79A809A /* facebook.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = facebook.js; sourceTree = "<group>"; };
+		83D8566B60973530D442CA6E /* popup-CCvSkTNe.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "popup-CCvSkTNe.js"; sourceTree = "<group>"; };
+		83FF51AEAD88198D5A4595F9 /* 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32.png; sourceTree = "<group>"; };
+		868BC8BEBE1CD5CE88C540D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D3D9A382898F28963241760 /* FeedlessSafari macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FeedlessSafari macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9503DCE9EA68F58FD4182F6A /* bsky.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = bsky.js; sourceTree = "<group>"; };
+		96B50EAA96FBAE1CCACC24C1 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		9FB2A2987F6DFE40DAA69CE3 /* youtube_mobile.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = youtube_mobile.css; sourceTree = "<group>"; };
+		A5D39AD63BC6E1C514020397 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		ADDC2C0BE4378D6AC9920CB3 /* youtube_mobile.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = youtube_mobile.js; sourceTree = "<group>"; };
+		B5AD59D0D561F9FF424A8DFD /* youtube_music.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = youtube_music.js; sourceTree = "<group>"; };
+		B5BCFC939CC2001BB3CC5EB5 /* tiktok.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = tiktok.js; sourceTree = "<group>"; };
+		B5C487E1452214C8420AAC8D /* youtube_music.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = youtube_music.css; sourceTree = "<group>"; };
+		C241AF31B95A62C15414B79D /* FeedlessSafari iOS Extension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = "FeedlessSafari iOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D3F20809B04AA6E755CAC5 /* instagram.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = instagram.css; sourceTree = "<group>"; };
+		C61CB0D4DF3CF9598C54DE21 /* 48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 48.png; sourceTree = "<group>"; };
+		CA90D58B178A1D059914F19B /* pinterest.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = pinterest.css; sourceTree = "<group>"; };
+		D08B623647ADF849A3575D29 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DD39A3EA02FDDC092C6CCC19 /* FeedlessSafari macOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FeedlessSafari macOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F219000FB4518DB5392C2C0C /* linkedin.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = linkedin.js; sourceTree = "<group>"; };
+		F3ECCD83E3E44F9EBE51FDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FC104523D667988C74BA810C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD261681B8B6FABD2099A830 /* youtube.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = youtube.js; sourceTree = "<group>"; };
+		FE46447762C564A31E961B4C /* facebook.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = facebook.css; sourceTree = "<group>"; };
+		FF07051FD4A8BE81438D4F86 /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D763281DEBF64AB0588484CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE1B05705EFAB4289C5ABFE9 /* SafariServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24D5040D58AADF4237324023 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				252119F957D346359C8951BA /* AppDelegate.swift */,
+				F3ECCD83E3E44F9EBE51FDAC /* Info.plist */,
+				A5D39AD63BC6E1C514020397 /* SettingsView.swift */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		262A1F6C6D50EFB4AF5ABD91 /* content-scripts */ = {
+			isa = PBXGroup;
+			children = (
+				7A11E86D9CC6C9D20132A5BD /* bsky.css */,
+				9503DCE9EA68F58FD4182F6A /* bsky.js */,
+				FE46447762C564A31E961B4C /* facebook.css */,
+				80AE03E9261F8CBAA79A809A /* facebook.js */,
+				C3D3F20809B04AA6E755CAC5 /* instagram.css */,
+				2065DBC1035B5CB6250D5C02 /* instagram.js */,
+				465CE3D04B8D4DB90B881DCE /* linkedin.css */,
+				F219000FB4518DB5392C2C0C /* linkedin.js */,
+				CA90D58B178A1D059914F19B /* pinterest.css */,
+				21A2A2EFC6F71A59410CD287 /* pinterest.js */,
+				1444E4E3E49EF0A2093FA8A3 /* reddit.css */,
+				081205514FA60CA6D3394A02 /* reddit.js */,
+				6DADBFA26E8626E972450766 /* substack.css */,
+				72A7AFDDFB4C85EFF1D9B62A /* substack.js */,
+				78C19E9D4ED5D8876FB1D638 /* tiktok.css */,
+				B5BCFC939CC2001BB3CC5EB5 /* tiktok.js */,
+				59212BE65D6C0B62CFDE530D /* twitter.css */,
+				59B2EC5B7D8E9E1CD0936575 /* twitter.js */,
+				9FB2A2987F6DFE40DAA69CE3 /* youtube_mobile.css */,
+				ADDC2C0BE4378D6AC9920CB3 /* youtube_mobile.js */,
+				B5C487E1452214C8420AAC8D /* youtube_music.css */,
+				B5AD59D0D561F9FF424A8DFD /* youtube_music.js */,
+				383F8E6EE9F642EF8D049AB8 /* youtube.css */,
+				FD261681B8B6FABD2099A830 /* youtube.js */,
+			);
+			path = "content-scripts";
+			sourceTree = "<group>";
+		};
+		31A3E4302849E1F6BAB38A71 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				FF07051FD4A8BE81438D4F86 /* 16.png */,
+				83FF51AEAD88198D5A4595F9 /* 32.png */,
+				C61CB0D4DF3CF9598C54DE21 /* 48.png */,
+				7D220AA068DAC5BF5A8F826C /* 128.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		3D5A1752D5D4FA84DEE7E068 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B1B7FA1B97F9517D5DF748EE /* assets */,
+				E6C90C098BC0C353D3796308 /* chunks */,
+				262A1F6C6D50EFB4AF5ABD91 /* content-scripts */,
+				31A3E4302849E1F6BAB38A71 /* icons */,
+				177CE54B55BE9AC6C61BB886 /* background.js */,
+				3B10E4799D8BB62D7675145A /* icon.svg */,
+				27DE6E21F6A97EA8408034ED /* manifest.json */,
+				5FA7D3B081DD869169E9BB70 /* options.html */,
+				7996A72EDD734CB805ADEE07 /* popup.html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A182631C81070035D0AF0914 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C241AF31B95A62C15414B79D /* FeedlessSafari iOS Extension.appex */,
+				6AB98E4A0F5F524558C84687 /* FeedlessSafari iOS.app */,
+				DD39A3EA02FDDC092C6CCC19 /* FeedlessSafari macOS Extension.appex */,
+				8D3D9A382898F28963241760 /* FeedlessSafari macOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2C996E36A18157D67C9DB08 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				20186AC9B8809FB29F7AAFB8 /* AppDelegate.swift */,
+				868BC8BEBE1CD5CE88C540D1 /* Info.plist */,
+				D08B623647ADF849A3575D29 /* SettingsView.swift */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		A3BF5D370147E0657EBBA1D9 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				3D5A1752D5D4FA84DEE7E068 /* Resources */,
+				17F3A82B5B6AF09AD813555B /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		A61C89A4654001530A553BC7 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				FC104523D667988C74BA810C /* Assets.xcassets */,
+				1BED776385A7D7E9C7DB3964 /* SettingsModel.swift */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		B1B7FA1B97F9517D5DF748EE /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				1AA2F76D0134D50FCE4A8557 /* optionSection-ud_yRWna.css */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		CAFA3E050EFC03498CD81881 = {
+			isa = PBXGroup;
+			children = (
+				A2C996E36A18157D67C9DB08 /* iOS (App) */,
+				24D5040D58AADF4237324023 /* macOS (App) */,
+				A61C89A4654001530A553BC7 /* Shared (App) */,
+				A3BF5D370147E0657EBBA1D9 /* Shared (Extension) */,
+				F0790C90FA07E36F81C7B4EE /* Frameworks */,
+				A182631C81070035D0AF0914 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6C90C098BC0C353D3796308 /* chunks */ = {
+			isa = PBXGroup;
+			children = (
+				0481AE8726A8676A03311CA7 /* options-KCc7K7Kd.js */,
+				66AD817CD44C9414FD944B07 /* optionSection-B1B0dc4m.js */,
+				83D8566B60973530D442CA6E /* popup-CCvSkTNe.js */,
+			);
+			path = chunks;
+			sourceTree = "<group>";
+		};
+		F0790C90FA07E36F81C7B4EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96B50EAA96FBAE1CCACC24C1 /* SafariServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3591DB79A488984536972577 /* FeedlessSafari macOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2731DFE88D0B8F6048AED922 /* Build configuration list for PBXNativeTarget "FeedlessSafari macOS Extension" */;
+			buildPhases = (
+				0EE4D8B3326349476794CBDD /* Sources */,
+				A2AA18A142048EC51B41B96F /* Resources */,
+				D763281DEBF64AB0588484CC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FeedlessSafari macOS Extension";
+			packageProductDependencies = (
+			);
+			productName = "FeedlessSafari macOS Extension";
+			productReference = DD39A3EA02FDDC092C6CCC19 /* FeedlessSafari macOS Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		4A770E11648F5C4A793C4BF3 /* FeedlessSafari macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A11B4276399B49DB03D8FD2 /* Build configuration list for PBXNativeTarget "FeedlessSafari macOS" */;
+			buildPhases = (
+				E3301F2758B4E65D6B693073 /* Sources */,
+				847126C69479C608653B9178 /* Resources */,
+				9593B35E62FF32336F2A3515 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EF63E0B1F1EC92D8ED35741 /* PBXTargetDependency */,
+			);
+			name = "FeedlessSafari macOS";
+			packageProductDependencies = (
+			);
+			productName = "FeedlessSafari macOS";
+			productReference = 8D3D9A382898F28963241760 /* FeedlessSafari macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58EDE6BC9745C2E0FB64B627 /* FeedlessSafari iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E8F2F1655C0A8459C867D99 /* Build configuration list for PBXNativeTarget "FeedlessSafari iOS" */;
+			buildPhases = (
+				A17A8F379430A5F92CD6EF8F /* Sources */,
+				DB213F04D8469BA9E513559C /* Resources */,
+				B8A2003F3EA383353151B199 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7FC2E0399DB19513E419669 /* PBXTargetDependency */,
+			);
+			name = "FeedlessSafari iOS";
+			packageProductDependencies = (
+			);
+			productName = "FeedlessSafari iOS";
+			productReference = 6AB98E4A0F5F524558C84687 /* FeedlessSafari iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		598ADD220E41F2AEF269DB5F /* FeedlessSafari iOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAF05BBD58F61136F9557012 /* Build configuration list for PBXNativeTarget "FeedlessSafari iOS Extension" */;
+			buildPhases = (
+				42BA0FFD7B2783556A1C2D8A /* Sources */,
+				667814B288F58403B03FBDDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FeedlessSafari iOS Extension";
+			packageProductDependencies = (
+			);
+			productName = "FeedlessSafari iOS Extension";
+			productReference = C241AF31B95A62C15414B79D /* FeedlessSafari iOS Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61EED711B08BD71D9B06BF65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3591DB79A488984536972577 = {
+						ProvisioningStyle = Automatic;
+					};
+					4A770E11648F5C4A793C4BF3 = {
+						ProvisioningStyle = Automatic;
+					};
+					58EDE6BC9745C2E0FB64B627 = {
+						ProvisioningStyle = Automatic;
+					};
+					598ADD220E41F2AEF269DB5F = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BF446F70E6C10D220A9B742B /* Build configuration list for PBXProject "FeedlessSafari" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CAFA3E050EFC03498CD81881;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A182631C81070035D0AF0914 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58EDE6BC9745C2E0FB64B627 /* FeedlessSafari iOS */,
+				598ADD220E41F2AEF269DB5F /* FeedlessSafari iOS Extension */,
+				4A770E11648F5C4A793C4BF3 /* FeedlessSafari macOS */,
+				3591DB79A488984536972577 /* FeedlessSafari macOS Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		667814B288F58403B03FBDDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BABAC766EF1BCAF32FFF0B4 /* 128.png in Resources */,
+				5206DD2EB3A228D1A235FC07 /* 16.png in Resources */,
+				8BC3655CF807B6AA72930C55 /* 32.png in Resources */,
+				72BD5D2E1316F56E4BBB205B /* 48.png in Resources */,
+				F91021F07CAE02BE1B94BC9F /* background.js in Resources */,
+				847D269B0D05262898EEA1F0 /* bsky.css in Resources */,
+				15272D7A20361062B5C15132 /* bsky.js in Resources */,
+				82884F4C3B43C195C6F5CF9B /* facebook.css in Resources */,
+				FC928F6631A3AE028A1F3302 /* facebook.js in Resources */,
+				1313EED521FAA4F92B1636E6 /* icon.svg in Resources */,
+				6E049D37DF6BFA693965B461 /* instagram.css in Resources */,
+				038B56758C1AA8065574492A /* instagram.js in Resources */,
+				962C810ECFF4C3E69DC7D27B /* linkedin.css in Resources */,
+				9E741390FC32C6C3326E600A /* linkedin.js in Resources */,
+				1D5265B97239FE9B1C829353 /* manifest.json in Resources */,
+				D608F5D1E1235F8410347DE8 /* optionSection-B1B0dc4m.js in Resources */,
+				1F4A72446C04AA389D0FFD20 /* optionSection-ud_yRWna.css in Resources */,
+				278511528C04765845ADB4E6 /* options-KCc7K7Kd.js in Resources */,
+				1D22C2F33D5FA4E4AB7259F3 /* options.html in Resources */,
+				5B398EFB6D41C611C8EC10EB /* pinterest.css in Resources */,
+				FB007A1FF8A14AA1C28C80CF /* pinterest.js in Resources */,
+				7F25D1E60541F4A2690330A2 /* popup-CCvSkTNe.js in Resources */,
+				8B013701959918F3FDB91687 /* popup.html in Resources */,
+				553FE631207B00B1B3415DC0 /* reddit.css in Resources */,
+				734880BF973FF883AE508FC1 /* reddit.js in Resources */,
+				C728B52F3AB9603DDB0C5628 /* substack.css in Resources */,
+				3B901B1ED06C9D097A23CA1E /* substack.js in Resources */,
+				A9A49CEA2EA1DEC7FE0D9BC6 /* tiktok.css in Resources */,
+				EEA0FAF1FA5409323A746FB9 /* tiktok.js in Resources */,
+				3F1E62D5E4092838F3FCD738 /* twitter.css in Resources */,
+				0F139CEB67697EB5930C4C60 /* twitter.js in Resources */,
+				4B9D0E3E50C9A28CCD61623F /* youtube.css in Resources */,
+				361618654CE660E0262A7469 /* youtube.js in Resources */,
+				7E443C18BCED598BB7842E86 /* youtube_mobile.css in Resources */,
+				8EA3F4B858D5F94F122DFE8C /* youtube_mobile.js in Resources */,
+				B56BDD9993BF7EAEB4FE80C2 /* youtube_music.css in Resources */,
+				FA3731D4ADC746AE8EBEB903 /* youtube_music.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847126C69479C608653B9178 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BD75046740E411345AAB776 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2AA18A142048EC51B41B96F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852676B8555BC4469368C586 /* 128.png in Resources */,
+				791C805EAF89AC71EDDCAE66 /* 16.png in Resources */,
+				B57DDD941E817D718A2DC718 /* 32.png in Resources */,
+				D9DFA6F1C6E11A54A2D6AAB2 /* 48.png in Resources */,
+				F944C3F50AFF4E5E4F021AFE /* background.js in Resources */,
+				EAF25D6043C5C200AFE8C98B /* bsky.css in Resources */,
+				0DCA2744BAB6CB987CCBAD08 /* bsky.js in Resources */,
+				4E1CCAE95BCBEAF9592BD0C7 /* facebook.css in Resources */,
+				5FE020896F1659CCF8396911 /* facebook.js in Resources */,
+				E9C6BADF86FAC0DF860198FE /* icon.svg in Resources */,
+				CE1AEEE5AE299AF2EDFB5D68 /* instagram.css in Resources */,
+				BB075F63A65E079ADFC6CE83 /* instagram.js in Resources */,
+				531B51FF4788BB57EA7B9FA0 /* linkedin.css in Resources */,
+				378EDB5E874422123207D470 /* linkedin.js in Resources */,
+				A6FD57AEF38D7D96C955E39B /* manifest.json in Resources */,
+				6EFA4E14BE918AF3B9D52188 /* optionSection-B1B0dc4m.js in Resources */,
+				A18B27D7F72C860CE340C0EF /* optionSection-ud_yRWna.css in Resources */,
+				0F545FBDE9020F8083EFC030 /* options-KCc7K7Kd.js in Resources */,
+				09C63A6ECEC9C29C3AD1B83C /* options.html in Resources */,
+				432F7DB8FC689C98443227BF /* pinterest.css in Resources */,
+				CD3E72622DC9C6FFCA127887 /* pinterest.js in Resources */,
+				DC30C4969DF40C7FB0B0BE9C /* popup-CCvSkTNe.js in Resources */,
+				8716145694613362DEA70654 /* popup.html in Resources */,
+				C9A78AA6F0A5B5E57F6A7207 /* reddit.css in Resources */,
+				EBE432D732B6F140CB8290D6 /* reddit.js in Resources */,
+				A82491FCAE5DEB79F71334F5 /* substack.css in Resources */,
+				7585D64F93A6F8E90C1D8E8F /* substack.js in Resources */,
+				B7090F5E5CA334ADAABE1DCA /* tiktok.css in Resources */,
+				B56DACDF355A419122BE74AA /* tiktok.js in Resources */,
+				E56D66CF0DB5FA1622A24732 /* twitter.css in Resources */,
+				10FBEE91B2585895FD577580 /* twitter.js in Resources */,
+				0610877CF3A7A46DB6B2E480 /* youtube.css in Resources */,
+				4DD12BBC17C78452D50116F5 /* youtube.js in Resources */,
+				8D53770B25BA6D57C8F26A67 /* youtube_mobile.css in Resources */,
+				CBCF8DA9C028FBBE754CA978 /* youtube_mobile.js in Resources */,
+				25138F31F02C3A0A232B41AE /* youtube_music.css in Resources */,
+				2C469C9F9CAB5B7991109BC7 /* youtube_music.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB213F04D8469BA9E513559C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C772926933244D59717B7B1B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EE4D8B3326349476794CBDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF4768695C4EF337D8F8419E /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42BA0FFD7B2783556A1C2D8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D8F5162E0DC597934568F58 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A17A8F379430A5F92CD6EF8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5440ADF12F55A84C3D810BB /* AppDelegate.swift in Sources */,
+				7286E050CF25F857F5948C18 /* SettingsModel.swift in Sources */,
+				8C7486EEF9F77EE45AFECB03 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3301F2758B4E65D6B693073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6E93F15FC3E7B4F1A22D900 /* AppDelegate.swift in Sources */,
+				088BE260C5665F3508B8DCFF /* SettingsModel.swift in Sources */,
+				8F68FD4550CAD06F2155B68E /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EF63E0B1F1EC92D8ED35741 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3591DB79A488984536972577 /* FeedlessSafari macOS Extension */;
+			targetProxy = C6B005D11CA2A1ADA8D144FE /* PBXContainerItemProxy */;
+		};
+		A7FC2E0399DB19513E419669 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 598ADD220E41F2AEF269DB5F /* FeedlessSafari iOS Extension */;
+			targetProxy = 8804EC74836DB594018475E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		333679ADDFF1A258B9DD2FCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattwagner.feedless-safari";
+				PRODUCT_NAME = FeedlessSafari;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6092833FBA6567950A5813FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattwagner.feedless-safari.Extension";
+				PRODUCT_NAME = "FeedlessSafari Extension";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6424F5DA2CCBA1EBF087796D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		68350882B3F24B6002B8919C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattwagner.feedless-safari";
+				PRODUCT_NAME = FeedlessSafari;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		68BCACAD6FF1705D3C5B1293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattwagner.feedless-safari";
+				PRODUCT_NAME = FeedlessSafari;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84DF9A8F8AF4812D36C463CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattwagner.feedless-safari.Extension";
+				PRODUCT_NAME = "FeedlessSafari Extension";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		88644BC653CB64F24C9BA414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattwagner.feedless-safari.Extension";
+				PRODUCT_NAME = "FeedlessSafari Extension";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A92C3484E67996537A835ECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattwagner.feedless-safari";
+				PRODUCT_NAME = FeedlessSafari;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C01E0474955FCAE21C9D6CE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D0AA880913E95AAB713BFF49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattwagner.feedless-safari.Extension";
+				PRODUCT_NAME = "FeedlessSafari Extension";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A11B4276399B49DB03D8FD2 /* Build configuration list for PBXNativeTarget "FeedlessSafari macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68350882B3F24B6002B8919C /* Debug */,
+				A92C3484E67996537A835ECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2731DFE88D0B8F6048AED922 /* Build configuration list for PBXNativeTarget "FeedlessSafari macOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88644BC653CB64F24C9BA414 /* Debug */,
+				84DF9A8F8AF4812D36C463CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3E8F2F1655C0A8459C867D99 /* Build configuration list for PBXNativeTarget "FeedlessSafari iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68BCACAD6FF1705D3C5B1293 /* Debug */,
+				333679ADDFF1A258B9DD2FCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BF446F70E6C10D220A9B742B /* Build configuration list for PBXProject "FeedlessSafari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01E0474955FCAE21C9D6CE5 /* Debug */,
+				6424F5DA2CCBA1EBF087796D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CAF05BBD58F61136F9557012 /* Build configuration list for PBXNativeTarget "FeedlessSafari iOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0AA880913E95AAB713BFF49 /* Debug */,
+				6092833FBA6567950A5813FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61EED711B08BD71D9B06BF65 /* Project object */;
+}

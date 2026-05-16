@@ -1,0 +1,2 @@
+:root[reddit-hide-feed=true][page-path=\/] .subgrid-container,:root[reddit-hide-explore-feed=true][page-path="/explore/"] .subgrid-container,:root[reddit-hide-related-posts-feed=true] pdp-right-rail{display:none}
+/*$vite$:1*/
