@@ -1,6 +1,6 @@
 # FeedlessSafari 🚫📰
 
-Safari Web Extension that hides distracting feed content on 11 social media platforms. A port of the [Feedless](https://github.com/your-org/feedless) Chrome extension for macOS and iOS.
+Safari Web Extension that hides distracting feed content on 11 social media platforms. A port of the [Feedless](https://github.com/ZMensRain/Feedless) Chrome extension for macOS and iOS.
 
 ## Supported Platforms
 
@@ -99,3 +99,6 @@ FeedlessSafari/
 ## License
 
 [MIT](LICENSE)
+## Credits
+
+Built on top of [Feedless](https://github.com/ZMensRain/Feedless) by [ZMensRain](https://github.com/ZMensRain) — the original Chrome extension this Safari port wraps. All platform-blocking logic comes from upstream; this project handles the Safari Web Extension shell, macOS/iOS app wrapping, and the settings UI.
