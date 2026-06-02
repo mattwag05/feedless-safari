@@ -8,7 +8,8 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
         let action = message?["action"] as? String
 
         var responsePayload: [String: Any]
-        let settings = UserDefaults.standard.dictionaryRepresentation()
+        let store = UserDefaults(suiteName: "group.com.mattwagner.feedless-safari") ?? .standard
+        let settings = store.dictionaryRepresentation()
             .filter { $0.key.hasPrefix("local:") }
 
         if action == "getSettings" {

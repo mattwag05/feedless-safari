@@ -26,15 +26,16 @@ struct SettingsView: View {
     }
 
     private func loadDefaults() {
+        let store = SharedDefaults.store
         for p in PlatformConfig.all {
-            for s in p.settings where UserDefaults.standard.object(forKey: s.rawKey) == nil {
-                UserDefaults.standard.set(s.defaultValue, forKey: s.rawKey)
+            for s in p.settings where store.object(forKey: s.rawKey) == nil {
+                store.set(s.defaultValue, forKey: s.rawKey)
             }
         }
     }
 
     private func keyBinding(_ key: String) -> Binding<Bool> {
-        Binding(get:  { UserDefaults.standard.bool(forKey: key) },
-                set:  { UserDefaults.standard.set($0, forKey: key) })
+        Binding(get:  { SharedDefaults.store.bool(forKey: key) },
+                set:  { SharedDefaults.store.set($0, forKey: key) })
     }
 }

@@ -12,6 +12,7 @@ settings:
     SWIFT_VERSION: "5.0"
     CLANG_ENABLE_OBJC_ARC: YES
     CURRENT_PROJECT_VERSION: 1
+    DEVELOPMENT_TEAM: PFT954M73N
 
 configs:
   Debug: debug
@@ -28,6 +29,7 @@ targets:
         CODE_SIGN_STYLE: Automatic
         COMBINE_HIDPI_IMAGES: YES
         INFOPLIST_FILE: "macOS (App)/Info.plist"
+        CODE_SIGN_ENTITLEMENTS: "macOS (App)/FeedlessSafari.entitlements"
     info:
       path: macOS (App)/Info.plist
     sources:
@@ -69,13 +71,42 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.mattwagner.feedless-safari.Extension
         CODE_SIGN_STYLE: Automatic
         INFOPLIST_FILE: "macOS (Extension)/Info.plist"
+        CODE_SIGN_ENTITLEMENTS: "macOS (Extension)/FeedlessSafariExtension.entitlements"
     info:
       path: macOS (Extension)/Info.plist
+      properties:
+        CFBundlePackageType: XPC!
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.Safari.web-extension
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).SafariWebExtensionHandler
     sources:
-      - Shared (Extension)
-    resources:
-      - path: Shared (Extension)/Resources
+      - path: Shared (Extension)
+        excludes:
+          - "Resources/**"
+      - path: Shared (Extension)/Resources/assets
         type: folder
+        buildPhase: resources
+      - path: Shared (Extension)/Resources/chunks
+        type: folder
+        buildPhase: resources
+      - path: Shared (Extension)/Resources/content-scripts
+        type: folder
+        buildPhase: resources
+      - path: Shared (Extension)/Resources/icons
+        type: folder
+        buildPhase: resources
+      - path: Shared (Extension)/Resources/background.js
+        buildPhase: resources
+      - path: Shared (Extension)/Resources/bridge.js
+        buildPhase: resources
+      - path: Shared (Extension)/Resources/icon.svg
+        buildPhase: resources
+      - path: Shared (Extension)/Resources/manifest.json
+        buildPhase: resources
+      - path: Shared (Extension)/Resources/options.html
+        buildPhase: resources
+      - path: Shared (Extension)/Resources/popup.html
+        buildPhase: resources
     dependencies:
       - sdk: SafariServices.framework
 
@@ -91,8 +122,36 @@ targets:
         INFOPLIST_FILE: "iOS (Extension)/Info.plist"
     info:
       path: iOS (Extension)/Info.plist
+      properties:
+        CFBundlePackageType: XPC!
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.Safari.web-extension
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).SafariWebExtensionHandler
     sources:
-      - Shared (Extension)
-    resources:
-      - path: Shared (Extension)/Resources
+      - path: Shared (Extension)
+        excludes:
+          - "Resources/**"
+      - path: Shared (Extension)/Resources/assets
         type: folder
+        buildPhase: resources
+      - path: Shared (Extension)/Resources/chunks
+        type: folder
+        buildPhase: resources
+      - path: Shared (Extension)/Resources/content-scripts
+        type: folder
+        buildPhase: resources
+      - path: Shared (Extension)/Resources/icons
+        type: folder
+        buildPhase: resources
+      - path: Shared (Extension)/Resources/background.js
+        buildPhase: resources
+      - path: Shared (Extension)/Resources/bridge.js
+        buildPhase: resources
+      - path: Shared (Extension)/Resources/icon.svg
+        buildPhase: resources
+      - path: Shared (Extension)/Resources/manifest.json
+        buildPhase: resources
+      - path: Shared (Extension)/Resources/options.html
+        buildPhase: resources
+      - path: Shared (Extension)/Resources/popup.html
+        buildPhase: resources
