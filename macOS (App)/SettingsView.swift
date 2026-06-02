@@ -19,26 +19,12 @@ struct SettingsView: View {
         } detail: {
             if let p = PlatformConfig.all.first(where: { $0.id == selected }) {
                 Form {
-                    Section { ForEach(p.settings) { s in Toggle(s.label, isOn: keyBinding(s.rawKey)) } }
+                    Section { ForEach(p.settings) { s in Toggle(s.label, isOn: s.toggleBinding) } }
                 }
                 .formStyle(.grouped)
             }
         }
-        .onAppear { loadDefaults() }
+        .onAppear { PlatformConfig.seedDefaults() }
         .frame(minWidth: 580, minHeight: 380)
-    }
-
-    private func loadDefaults() {
-        let store = SharedDefaults.store
-        for p in PlatformConfig.all {
-            for s in p.settings where store.object(forKey: s.rawKey) == nil {
-                store.set(s.defaultValue, forKey: s.rawKey)
-            }
-        }
-    }
-
-    private func keyBinding(_ key: String) -> Binding<Bool> {
-        Binding(get:  { SharedDefaults.store.bool(forKey: key) },
-                set:  { SharedDefaults.store.set($0, forKey: key) })
     }
 }

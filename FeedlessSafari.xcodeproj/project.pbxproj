@@ -27,19 +27,25 @@
 		8C7486EEF9F77EE45AFECB03 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B623647ADF849A3575D29 /* SettingsView.swift */; };
 		8F68FD4550CAD06F2155B68E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D39AD63BC6E1C514020397 /* SettingsView.swift */; };
 		91240C67751FA2B6FDF4EA55 /* content-scripts in Resources */ = {isa = PBXBuildFile; fileRef = E3EFDF25F5C1E627A29DA35C /* content-scripts */; };
+		91A225EFFDEEF7CD4C5EC9AE /* SettingsBindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62FA712787ED8925E84CC71 /* SettingsBindings.swift */; };
+		A701358895935CB9C434EEEC /* SettingsBindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62FA712787ED8925E84CC71 /* SettingsBindings.swift */; };
 		A724C00B35DA8452AD48D438 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = 3D68370D031F231FDA644B7B /* options.html */; };
+		A822D17E5152D244B15D47B8 /* SharedDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C4D6BCE553CA885FF0840 /* SharedDefaults.swift */; };
 		AF4768695C4EF337D8F8419E /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3A82B5B6AF09AD813555B /* SafariWebExtensionHandler.swift */; };
 		B478EE30DEEEFF8E8793AEDC /* content-scripts in Resources */ = {isa = PBXBuildFile; fileRef = E3EFDF25F5C1E627A29DA35C /* content-scripts */; };
 		B5440ADF12F55A84C3D810BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20186AC9B8809FB29F7AAFB8 /* AppDelegate.swift */; };
 		C6E93F15FC3E7B4F1A22D900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252119F957D346359C8951BA /* AppDelegate.swift */; };
 		C772926933244D59717B7B1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC104523D667988C74BA810C /* Assets.xcassets */; };
 		CBEED8C420E44C5C935921D8 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 16BB091392D33429D3638AB1 /* manifest.json */; };
+		D3A41AC5C0E754CD7B31A3B3 /* SharedDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C4D6BCE553CA885FF0840 /* SharedDefaults.swift */; };
+		D5B49E2D543F918A77DED3A7 /* SharedDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C4D6BCE553CA885FF0840 /* SharedDefaults.swift */; };
 		D84970493FA502C878EB5808 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC65D8687AE3F73D8EAE89 /* popup.html */; };
 		DE58EF270C7D0C84DD5849C4 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC65D8687AE3F73D8EAE89 /* popup.html */; };
 		E90D62B23D17A66AFD6DE6E4 /* chunks in Resources */ = {isa = PBXBuildFile; fileRef = D68A33B912555316D7F36FC1 /* chunks */; };
 		EE1B05705EFAB4289C5ABFE9 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B50EAA96FBAE1CCACC24C1 /* SafariServices.framework */; };
 		F0F2A08D7C5C304E12ADA116 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 19E399038BDF0611016AEE64 /* background.js */; };
 		F6B2B205B52E4D1B7F18C701 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 3D44F6641F3678243367E103 /* icons */; };
+		F9AB3EC5417706DB98B6EF02 /* SharedDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C4D6BCE553CA885FF0840 /* SharedDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,8 +106,10 @@
 		868BC8BEBE1CD5CE88C540D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8C711A18EDFB4C41953CE564 /* bridge.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = bridge.js; sourceTree = "<group>"; };
 		8D3D9A382898F28963241760 /* FeedlessSafari macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FeedlessSafari macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		924C4D6BCE553CA885FF0840 /* SharedDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDefaults.swift; sourceTree = "<group>"; };
 		96B50EAA96FBAE1CCACC24C1 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		A5D39AD63BC6E1C514020397 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B62FA712787ED8925E84CC71 /* SettingsBindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBindings.swift; sourceTree = "<group>"; };
 		C241AF31B95A62C15414B79D /* FeedlessSafari iOS Extension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = "FeedlessSafari iOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08B623647ADF849A3575D29 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		D68A33B912555316D7F36FC1 /* chunks */ = {isa = PBXFileReference; lastKnownFileType = folder; name = chunks; path = "Shared (Extension)/Resources/chunks"; sourceTree = SOURCE_ROOT; };
@@ -168,7 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				FC104523D667988C74BA810C /* Assets.xcassets */,
+				B62FA712787ED8925E84CC71 /* SettingsBindings.swift */,
 				1BED776385A7D7E9C7DB3964 /* SettingsModel.swift */,
+				924C4D6BCE553CA885FF0840 /* SharedDefaults.swift */,
 			);
 			path = "Shared (App)";
 			sourceTree = "<group>";
@@ -400,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF4768695C4EF337D8F8419E /* SafariWebExtensionHandler.swift in Sources */,
+				A822D17E5152D244B15D47B8 /* SharedDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D8F5162E0DC597934568F58 /* SafariWebExtensionHandler.swift in Sources */,
+				D5B49E2D543F918A77DED3A7 /* SharedDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,8 +428,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5440ADF12F55A84C3D810BB /* AppDelegate.swift in Sources */,
+				91A225EFFDEEF7CD4C5EC9AE /* SettingsBindings.swift in Sources */,
 				7286E050CF25F857F5948C18 /* SettingsModel.swift in Sources */,
 				8C7486EEF9F77EE45AFECB03 /* SettingsView.swift in Sources */,
+				D3A41AC5C0E754CD7B31A3B3 /* SharedDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,8 +440,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6E93F15FC3E7B4F1A22D900 /* AppDelegate.swift in Sources */,
+				A701358895935CB9C434EEEC /* SettingsBindings.swift in Sources */,
 				088BE260C5665F3508B8DCFF /* SettingsModel.swift in Sources */,
 				8F68FD4550CAD06F2155B68E /* SettingsView.swift in Sources */,
+				F9AB3EC5417706DB98B6EF02 /* SharedDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

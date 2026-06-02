@@ -1,10 +1,5 @@
 import Foundation
 
-enum SharedDefaults {
-    static let appGroup = "group.com.mattwagner.feedless-safari"
-    static let store: UserDefaults = UserDefaults(suiteName: appGroup) ?? .standard
-}
-
 struct PlatformConfig: Identifiable, Equatable, Hashable {
     let id: String
     let name: String
