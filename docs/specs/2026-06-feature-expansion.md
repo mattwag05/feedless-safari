@@ -91,7 +91,7 @@ A `LICENSE-NOTICES.md` file at the project root will document this protocol publ
 
 ### 5.3 Threads (new platform)
 
-**Domain:** `threads.net` (and `threads.com` if Meta is migrating)
+**Domain:** `threads.com` (Meta consolidated here; `threads.net` redirects — match `threads.com` only, the redirect handles legacy bookmarks)
 
 **Target nodes:**
 - For You feed.
@@ -109,10 +109,10 @@ A `LICENSE-NOTICES.md` file at the project root will document this protocol publ
 When a feed is hidden on any of the 14 supported platforms, render a centered card in the hidden area showing a quote.
 
 **Behavior:**
-- Quote selection: deterministic per page-load by default, with a settings option for "new quote on every page load" vs "same quote per session" vs "same quote per day".
+- Quote selection: **per-page-load by default (decided)**. A settings option still exposes the alternatives (`session`, `day`) so users can dial down the churn if they want, but `page-load` is the shipping default and what new installs get.
 - Library: 50–100 quotes ship in the app. **Public-domain authors only** (Marcus Aurelius, Seneca, Epictetus, Emerson, Thoreau, Wendell Berry pre-1929 work, etc.), supplemented with fresh originals if we want.
 - Each quote = `{text: String, attribution: String}`. Optional `source` field for fans of footnotes.
-- User can add their own quotes via Settings → Quotes → Add. Stored locally, never synced (privacy).
+- User can add their own quotes via Settings → Quotes → Add. **Provide the add/edit UI on BOTH macOS AND iOS.** On iOS, the constrained settings surface means we use a SwiftUI sheet (modal) for new-quote entry — `text` (multi-line TextField), `attribution` (single line), optional `source`. List of existing user quotes is editable inline with swipe-to-delete. Stored locally per device (UserDefaults), never iCloud-synced (privacy by default).
 - User can disable the widget entirely (toggle: "Show inspirational quote when feeds are hidden").
 
 **Visual design:**
@@ -156,7 +156,8 @@ Custom Resources/                                 ← new top-level directory we
 | File | Change |
 |---|---|
 | `Shared (App)/SettingsModel.swift` | Append three new `PlatformConfig` entries (HN, GitHub, Threads) and a new `QuoteWidgetConfig` block. |
-| `Shared (App)/Settings/SettingsView.swift` (or wherever the SwiftUI form lives) | Add toggles for the three new platforms; new section for Quote Widget settings. |
+| `Shared (App)/Settings/SettingsView.swift` (or wherever the SwiftUI form lives) | Add toggles for the three new platforms; new section for Quote Widget settings. **Quote-widget settings UI ships on BOTH macOS and iOS** — same SwiftUI views, conditional layout via `#if os(iOS)` only where platform-specific affordances are needed (e.g., sheet vs popover). |
+| `Shared (App)/Settings/QuoteEditorView.swift` | **NEW** — SwiftUI form for adding/editing a user quote. Shared between macOS (inline section) and iOS (modal sheet). |
 | `Shared (App)/Resources/quotes.json` | **NEW** — curated public-domain quote library. |
 | `Shared (App)/QuoteLibrary.swift` | **NEW** — Codable struct, merges curated + user quotes, exposes to bridge. |
 | `Shared (Extension)/Resources/manifest.json` | Add new content-script entries for HN, GitHub, Threads. The rebuild script regenerates this from upstream, so the layering step in `rebuild.sh` will need to patch it. |
@@ -265,9 +266,9 @@ Suggested sequencing: milestones 1, 9 first (so the layering machinery is in pla
 
 ## 10. Open Questions
 
-1. **Quote rotation default** — locked at `page-load` here. Confirm that's what you want; some folks prefer `session` so they get attached to one quote per coffee.
-2. **iOS quote widget custom-quote add UI** — iOS Safari extensions have constrained settings UIs. Should custom-quote editing be macOS-only, or do we build an iOS sheet too?
-3. **Threads domain** — Meta has been moving things between `threads.net` and `threads.com`. Match both; specifically verify which is currently the active host.
+1. ~~Quote rotation default~~ — **DECIDED 2026-06-01: per-page-load** is the shipping default. Session/day still available as user-selectable options.
+2. ~~iOS quote widget custom-quote add UI~~ — **DECIDED 2026-06-01: build it on iOS too**, as a SwiftUI sheet. Same `QuoteEditorView` shared between macOS (inline section) and iOS (modal sheet) — see §6.2.
+3. ~~Threads domain~~ — **DECIDED 2026-06-01: `threads.com` only**, no `.net` matching. Meta's redirect handles legacy bookmarks.
 4. **GitHub Enterprise** — should the toggle also apply to `github.<company>.com` hosts? Probably out of scope but worth flagging.
 5. **NFE's "Hacker News" detection** — they don't hide individual story discussion pages; they only hide the top stories list. Confirm that's what you want, vs. hiding the front-page link list more aggressively.
 6. **Naming the third-party-platform script overlay** — `Custom Resources/` is functional; `App Resources/` or `Local Resources/` might read better. Bikeshed at implementation time.
