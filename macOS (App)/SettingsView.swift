@@ -19,7 +19,13 @@ struct SettingsView: View {
         } detail: {
             if let p = PlatformConfig.all.first(where: { $0.id == selected }) {
                 Form {
-                    Section { ForEach(p.settings) { s in Toggle(s.label, isOn: s.toggleBinding) } }
+                    ForEach(p.groupedSettings, id: \.0) { group, keys in
+                        Section {
+                            ForEach(keys) { SettingRow(setting: $0) }
+                        } header: {
+                            if p.showsGroupHeaders { Text(group.rawValue) }
+                        }
+                    }
                 }
                 .formStyle(.grouped)
             }

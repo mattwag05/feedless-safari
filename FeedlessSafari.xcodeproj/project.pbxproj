@@ -31,8 +31,10 @@
 		A701358895935CB9C434EEEC /* SettingsBindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62FA712787ED8925E84CC71 /* SettingsBindings.swift */; };
 		A724C00B35DA8452AD48D438 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = 3D68370D031F231FDA644B7B /* options.html */; };
 		A822D17E5152D244B15D47B8 /* SharedDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C4D6BCE553CA885FF0840 /* SharedDefaults.swift */; };
+		AE240D4B2B7E128CA6626E39 /* SettingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EAAC194C937679E1F94549 /* SettingRow.swift */; };
 		AF4768695C4EF337D8F8419E /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F3A82B5B6AF09AD813555B /* SafariWebExtensionHandler.swift */; };
 		B478EE30DEEEFF8E8793AEDC /* content-scripts in Resources */ = {isa = PBXBuildFile; fileRef = E3EFDF25F5C1E627A29DA35C /* content-scripts */; };
+		B4FD312873328026DAE8FE23 /* SettingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EAAC194C937679E1F94549 /* SettingRow.swift */; };
 		B5440ADF12F55A84C3D810BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20186AC9B8809FB29F7AAFB8 /* AppDelegate.swift */; };
 		C6E93F15FC3E7B4F1A22D900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252119F957D346359C8951BA /* AppDelegate.swift */; };
 		C772926933244D59717B7B1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC104523D667988C74BA810C /* Assets.xcassets */; };
@@ -99,10 +101,12 @@
 		21BB50742BFE4461C7C02C2A /* FeedlessSafari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FeedlessSafari.entitlements; sourceTree = "<group>"; };
 		252119F957D346359C8951BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34200DF9DE540A26EA628372 /* icon.svg */ = {isa = PBXFileReference; path = icon.svg; sourceTree = "<group>"; };
+		38EAAC194C937679E1F94549 /* SettingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRow.swift; sourceTree = "<group>"; };
 		3BEC65D8687AE3F73D8EAE89 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
 		3D44F6641F3678243367E103 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = "Shared (Extension)/Resources/icons"; sourceTree = SOURCE_ROOT; };
 		3D68370D031F231FDA644B7B /* options.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = options.html; sourceTree = "<group>"; };
 		6AB98E4A0F5F524558C84687 /* FeedlessSafari iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "FeedlessSafari iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F9F24B9F3EEDA25A957573F /* FeedlessSafari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FeedlessSafari.entitlements; sourceTree = "<group>"; };
 		868BC8BEBE1CD5CE88C540D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8C711A18EDFB4C41953CE564 /* bridge.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = bridge.js; sourceTree = "<group>"; };
 		8D3D9A382898F28963241760 /* FeedlessSafari macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FeedlessSafari macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				20186AC9B8809FB29F7AAFB8 /* AppDelegate.swift */,
+				6F9F24B9F3EEDA25A957573F /* FeedlessSafari.entitlements */,
 				868BC8BEBE1CD5CE88C540D1 /* Info.plist */,
 				D08B623647ADF849A3575D29 /* SettingsView.swift */,
 			);
@@ -176,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				FC104523D667988C74BA810C /* Assets.xcassets */,
+				38EAAC194C937679E1F94549 /* SettingRow.swift */,
 				B62FA712787ED8925E84CC71 /* SettingsBindings.swift */,
 				1BED776385A7D7E9C7DB3964 /* SettingsModel.swift */,
 				924C4D6BCE553CA885FF0840 /* SharedDefaults.swift */,
@@ -428,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5440ADF12F55A84C3D810BB /* AppDelegate.swift in Sources */,
+				B4FD312873328026DAE8FE23 /* SettingRow.swift in Sources */,
 				91A225EFFDEEF7CD4C5EC9AE /* SettingsBindings.swift in Sources */,
 				7286E050CF25F857F5948C18 /* SettingsModel.swift in Sources */,
 				8C7486EEF9F77EE45AFECB03 /* SettingsView.swift in Sources */,
@@ -440,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6E93F15FC3E7B4F1A22D900 /* AppDelegate.swift in Sources */,
+				AE240D4B2B7E128CA6626E39 /* SettingRow.swift in Sources */,
 				A701358895935CB9C434EEEC /* SettingsBindings.swift in Sources */,
 				088BE260C5665F3508B8DCFF /* SettingsModel.swift in Sources */,
 				8F68FD4550CAD06F2155B68E /* SettingsView.swift in Sources */,
@@ -467,6 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iOS (App)/FeedlessSafari.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
@@ -484,6 +493,7 @@
 		6092833FBA6567950A5813FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "iOS (Extension)/FeedlessSafariExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -578,6 +588,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iOS (App)/FeedlessSafari.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
@@ -714,6 +725,7 @@
 		D0AA880913E95AAB713BFF49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "iOS (Extension)/FeedlessSafariExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

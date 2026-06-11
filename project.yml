@@ -51,6 +51,7 @@ targets:
         CODE_SIGN_STYLE: Automatic
         TARGETED_DEVICE_FAMILY: "1,2"
         INFOPLIST_FILE: "iOS (App)/Info.plist"
+        CODE_SIGN_ENTITLEMENTS: "iOS (App)/FeedlessSafari.entitlements"
     info:
       path: iOS (App)/Info.plist
     sources:
@@ -121,6 +122,7 @@ targets:
         CODE_SIGN_STYLE: Automatic
         TARGETED_DEVICE_FAMILY: "1,2"
         INFOPLIST_FILE: "iOS (Extension)/Info.plist"
+        CODE_SIGN_ENTITLEMENTS: "iOS (Extension)/FeedlessSafariExtension.entitlements"
     info:
       path: iOS (Extension)/Info.plist
       properties:

@@ -12,8 +12,14 @@ struct SettingsView: View {
             List {
                 ForEach(filtered) { platform in
                     Section(header: Label(platform.name, systemImage: platform.systemImage)) {
-                        ForEach(platform.settings) { s in
-                            Toggle(s.label, isOn: s.toggleBinding)
+                        ForEach(platform.groupedSettings, id: \.0) { group, keys in
+                            if platform.showsGroupHeaders {
+                                Text(group.rawValue)
+                                    .font(.caption.weight(.semibold))
+                                    .foregroundColor(.secondary)
+                                    .textCase(.uppercase)
+                            }
+                            ForEach(keys) { SettingRow(setting: $0) }
                         }
                     }
                 }
