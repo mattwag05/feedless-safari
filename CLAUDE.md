@@ -8,12 +8,21 @@ Safari Web Extension (macOS + iOS) that hides feeds on 12 social platforms. Port
 
 ```bash
 /opt/homebrew/bin/xcodegen generate   # rewrites project.pbxproj + Info.plists
-# then build in Xcode (BuildProject MCP tool, or scheme "FeedlessSafari macOS")
+# then build (BuildProject MCP tool, or CLI):
+xcodebuild -project FeedlessSafari.xcodeproj -scheme "FeedlessSafari macOS" -configuration Debug build
+xcodebuild -project FeedlessSafari.xcodeproj -scheme "FeedlessSafari iOS" -configuration Debug \
+  -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build
 ```
 
 Never hand-edit `project.pbxproj` or the extension `Info.plist` files — xcodegen overwrites them.
 
 ## Non-obvious gotchas
+
+### SourceKit diagnostics on Swift edits are noise
+Editing files in `Shared (App)/` triggers "Cannot find type X in scope" from SourceKit — the files aren't standalone-compilable (they reference symbols across the app module), and the linter indexes them in isolation. Ignore these; `xcodebuild` (above) is the only real correctness check.
+
+### Verifying content-script selectors without loading the extension
+`node --check Shared\ (Extension)/Custom/*.js` syntax-checks the overlay JS. To validate CSS selectors against a live site, use the Chrome MCP to simulate the extension: set the `:root` attribute (the `local:`-stripped key) + inject the platform CSS, then measure what hides — this caught Threads having no `[role=main]` (its feed is the single `[role=region]`). Gotchas: Reddit is blocked by Chrome-MCP safety list; logged-out x.com/pinterest redirect or lack the authed feed DOM.
 
 ### Extension Info.plist is generated from `project.yml`
 `NSExtension` (and `CFBundlePackageType: XPC!`) live in `info.properties` under each Extension target in `project.yml`. Editing the plist directly works once, then gets clobbered on the next `xcodegen generate`. The Extension Info.plist **must** declare:
