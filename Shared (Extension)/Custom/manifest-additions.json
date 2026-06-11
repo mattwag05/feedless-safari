@@ -1,24 +1,7 @@
 {
-  "comment": "Input for scripts/patch-manifest.py. The bridge entry is rewritten wholesale (it must run on every platform, upstream and custom); content_scripts entries are stripped-and-readded by their Custom/ paths. Run the patcher after any upstream resync.",
+  "comment": "Input for scripts/patch-manifest.py. Entries are stripped-and-readded by their Custom/ paths; 'matches': 'all-platforms' is replaced with the computed union of upstream + custom host patterns. Run the patcher after any upstream resync.",
   "bridge": {
-    "matches": [
-      "*://*.facebook.com/*",
-      "*://*.instagram.com/*",
-      "*://*.linkedin.com/*",
-      "*://*.pinterest.com/*",
-      "*://*.threads.com/*",
-      "*://*.tiktok.com/*",
-      "*://*.twitter.com/*",
-      "*://*.x.com/*",
-      "*://bsky.app/*",
-      "*://github.com/*",
-      "*://m.youtube.com/*",
-      "*://music.youtube.com/*",
-      "*://news.ycombinator.com/*",
-      "*://substack.com/*",
-      "*://www.reddit.com/*",
-      "*://www.youtube.com/*"
-    ],
+    "matches": "all-platforms",
     "run_at": "document_start",
     "js": [
       "Custom/bridge.js"
@@ -65,24 +48,7 @@
       ]
     },
     {
-      "matches": [
-        "*://*.facebook.com/*",
-        "*://*.instagram.com/*",
-        "*://*.linkedin.com/*",
-        "*://*.pinterest.com/*",
-        "*://*.threads.com/*",
-        "*://*.tiktok.com/*",
-        "*://*.twitter.com/*",
-        "*://*.x.com/*",
-        "*://bsky.app/*",
-        "*://github.com/*",
-        "*://m.youtube.com/*",
-        "*://music.youtube.com/*",
-        "*://news.ycombinator.com/*",
-        "*://substack.com/*",
-        "*://www.reddit.com/*",
-        "*://www.youtube.com/*"
-      ],
+      "matches": "all-platforms",
       "run_at": "document_idle",
       "css": [
         "Custom/quote-widget.css"

@@ -51,6 +51,8 @@ Custom scripts mirror the upstream contract: `lib.js` copies `local:*` keys from
 
 In practice `Resources/` is still sync'd by hand from a separate local Feedless WXT build; rebuild.sh now has the real upstream URL (`ZMensRain/Feedless`) but is untested end-to-end.
 
+**Designated resync-breakage surface:** the `MOUNTS` table in `Custom/quote-widget.js` couples to upstream internals — `:root` attribute names and the DOM anchors of each platform's hidden feed. An upstream resync that renames either makes the widget silently stop mounting on that platform (no error). After any resync, spot-check the widget on a few platforms and update the table.
+
 ### *-shortform settings are tri-state strings, not Bools
 `youtube/facebook/instagram/tiktok-shortform` take `"block"` / `"hide"` / `"show"`. A Bool written to these keys matches no upstream CSS rule (this bug shipped for a while). The app renders them as pickers (`SettingKind.shortform`) and `seedDefaults()` migrates legacy Bool values (`true`→`"block"`, `false`→`"show"`). Don't write Bools to shortform keys.
 

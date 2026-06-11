@@ -45,12 +45,10 @@ enum QuoteWidget {
     }
 
     static var enabledBinding: Binding<Bool> {
-        Binding(get: { SharedDefaults.store.bool(forKey: enabledKey) },
-                set: { SharedDefaults.store.set($0, forKey: enabledKey) })
+        SharedDefaults.boolBinding(forKey: enabledKey)
     }
 
     static var rotationBinding: Binding<String> {
-        Binding(get: { SharedDefaults.store.string(forKey: rotationKey) ?? "page-load" },
-                set: { SharedDefaults.store.set($0, forKey: rotationKey) })
+        SharedDefaults.stringBinding(forKey: rotationKey, default: "page-load", allowed: rotationOptions.map(\.value))
     }
 }

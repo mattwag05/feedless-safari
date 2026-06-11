@@ -27,7 +27,7 @@ struct PlatformConfig: Identifiable, Equatable, Hashable {
         }
     }
 
-    var showsGroupHeaders: Bool { settings.count >= 4 }
+    var showsGroupHeaders: Bool { settings.count >= 4 && groupedSettings.count > 1 }
 }
 
 struct SettingKey: Identifiable, Equatable, Hashable {

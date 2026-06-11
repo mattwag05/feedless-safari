@@ -4,7 +4,7 @@
 (function () {
   const lib = window.__feedlessCustom;
   if (!lib) return;
-  lib.trackPagePath();
+  lib.trackPagePath({ poll: false });
   lib.watch({
     "local:hackernews-hide-feed": "true",
   });

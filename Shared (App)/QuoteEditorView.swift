@@ -1,11 +1,25 @@
 import SwiftUI
 
+/// The enable toggle + rotation picker, shared by both platforms' settings UIs.
+struct QuoteWidgetControls: View {
+    var body: some View {
+        Toggle("Show Quotes Over Hidden Feeds", isOn: QuoteWidget.enabledBinding)
+        Picker("New Quote", selection: QuoteWidget.rotationBinding) {
+            ForEach(QuoteWidget.rotationOptions, id: \.value) { option in
+                Text(option.label).tag(option.value)
+            }
+        }
+    }
+}
+
 /// Custom-quote list editor, shared by both platforms. iOS presents it as a
 /// sheet; macOS embeds it inline in the Quote Widget settings pane.
 struct QuoteEditorView: View {
     @State private var quotes = QuoteWidget.loadCustomQuotes()
     @State private var newText = ""
     @State private var newAttribution = ""
+
+    private var trimmedText: String { newText.trimmingCharacters(in: .whitespacesAndNewlines) }
 
     var body: some View {
         Group {
@@ -36,15 +50,14 @@ struct QuoteEditorView: View {
             TextField("Quote", text: $newText)
             TextField("Attribution", text: $newAttribution)
             Button("Add Quote") {
-                let text = newText.trimmingCharacters(in: .whitespacesAndNewlines)
-                guard !text.isEmpty else { return }
+                guard !trimmedText.isEmpty else { return }
                 let attribution = newAttribution.trimmingCharacters(in: .whitespacesAndNewlines)
-                quotes.append(CustomQuote(text: text, attribution: attribution.isEmpty ? "Unknown" : attribution))
+                quotes.append(CustomQuote(text: trimmedText, attribution: attribution.isEmpty ? "Unknown" : attribution))
                 QuoteWidget.saveCustomQuotes(quotes)
                 newText = ""
                 newAttribution = ""
             }
-            .disabled(newText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+            .disabled(trimmedText.isEmpty)
         }
     }
 }

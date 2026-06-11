@@ -39,19 +39,13 @@ struct SettingsView: View {
                 .formStyle(.grouped)
             }
         }
-        .onAppear { PlatformConfig.seedDefaults() }
         .frame(minWidth: 580, minHeight: 380)
     }
 
     private var quoteWidgetForm: some View {
         Form {
             Section {
-                Toggle("Show Quotes Over Hidden Feeds", isOn: QuoteWidget.enabledBinding)
-                Picker("New Quote", selection: QuoteWidget.rotationBinding) {
-                    ForEach(QuoteWidget.rotationOptions, id: \.value) { option in
-                        Text(option.label).tag(option.value)
-                    }
-                }
+                QuoteWidgetControls()
             }
             Section("Custom Quotes") {
                 QuoteEditorView()

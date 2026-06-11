@@ -33,9 +33,10 @@
   // Maintains a `page-path` attribute on :root, normalized with a trailing
   // slash ("/", "/following/", ...) to match the upstream convention. Content
   // scripts run in an isolated world, so SPA navigations are detected by
-  // polling + popstate rather than patching history.
+  // polling + popstate rather than patching history. Pass { poll: false } on
+  // static-HTML hosts where every navigation is a full page load.
   let tracking = false;
-  function trackPagePath() {
+  function trackPagePath(options) {
     if (tracking) return;
     tracking = true;
     let last = null;
@@ -48,7 +49,7 @@
     };
     update();
     window.addEventListener("popstate", update);
-    setInterval(update, 300);
+    if (options?.poll !== false) setInterval(update, 300);
   }
 
   window.__feedlessCustom = { watch, trackPagePath };

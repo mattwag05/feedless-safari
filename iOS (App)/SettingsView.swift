@@ -26,12 +26,7 @@ struct SettingsView: View {
                     }
                 }
                 Section(header: Label("Quote Widget", systemImage: "quote.opening")) {
-                    Toggle("Show Quotes Over Hidden Feeds", isOn: QuoteWidget.enabledBinding)
-                    Picker("New Quote", selection: QuoteWidget.rotationBinding) {
-                        ForEach(QuoteWidget.rotationOptions, id: \.value) { option in
-                            Text(option.label).tag(option.value)
-                        }
-                    }
+                    QuoteWidgetControls()
                     Button("Edit Custom Quotes…") { showQuoteEditor = true }
                 }
             }
@@ -50,6 +45,5 @@ struct SettingsView: View {
                     }
             }
         }
-        .onAppear { PlatformConfig.seedDefaults() }
     }
 }

@@ -13,6 +13,7 @@
     rotation: "local:quote-widget-rotation-policy",
     custom: "local:quote-widget-custom-quotes-json",
   };
+  const KEY_LIST = Object.values(KEYS);
   const CARD_ID = "feedless-quote-card";
 
   // rule = { attr: :root attribute the upstream/custom script maintains,
@@ -89,7 +90,7 @@
   function renderQuote(card) {
     const quotes = pool();
     if (quoteIndex === null || quoteIndex >= quotes.length) quoteIndex = pickIndex(quotes.length, false);
-    const q = quotes[quoteIndex ?? 0];
+    const q = quotes[quoteIndex];
     if (!q) return;
     card.querySelector(".feedless-quote-text").textContent = "“" + q.text + "”";
     card.querySelector(".feedless-quote-attribution").textContent = "— " + (q.attribution || "Unknown");
@@ -153,20 +154,40 @@
     }
   }
 
-  B.storage.local.get(Object.values(KEYS)).then((stored) => {
-    applySettings(stored || {});
+  // The re-mount poll only runs while the widget is enabled — a disabled
+  // widget costs nothing beyond the initial storage read.
+  let pollId = null;
+  function syncPoll() {
+    if (settings.enabled && pollId === null) {
+      pollId = setInterval(ensureMounted, 700);
+    } else if (!settings.enabled && pollId !== null) {
+      clearInterval(pollId);
+      pollId = null;
+    }
+  }
+
+  let snapshot = {};
+  B.storage.local.get(KEY_LIST).then((stored) => {
+    snapshot = stored || {};
+    applySettings(snapshot);
     ensureMounted();
-    setInterval(ensureMounted, 700);
+    syncPoll();
   });
 
   B.storage.onChanged.addListener((changes, area) => {
     if (area !== "local") return;
-    if (!Object.values(KEYS).some((k) => k in changes)) return;
-    B.storage.local.get(Object.values(KEYS)).then((stored) => {
-      applySettings(stored || {});
-      quoteIndex = null;
-      document.getElementById(CARD_ID)?.remove();
-      ensureMounted();
-    });
+    let touched = false;
+    for (const k of KEY_LIST) {
+      if (k in changes) {
+        snapshot[k] = changes[k].newValue;
+        touched = true;
+      }
+    }
+    if (!touched) return;
+    applySettings(snapshot);
+    quoteIndex = null;
+    document.getElementById(CARD_ID)?.remove();
+    ensureMounted();
+    syncPoll();
   });
 })();
