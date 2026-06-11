@@ -11,7 +11,7 @@ TEMP_DIR=$(mktemp -d)
 trap 'rm -rf "$TEMP_DIR"' EXIT
 
 echo "==> Cloning upstream Feedless..."
-git clone --depth 1 https://github.com/your-org/feedless.git "$TEMP_DIR/feedless" 2>/dev/null || {
+git clone --depth 1 https://github.com/ZMensRain/Feedless.git "$TEMP_DIR/feedless" 2>/dev/null || {
   echo "ERROR: Could not clone Feedless. Check the repo URL."
   exit 1
 }
@@ -38,6 +38,9 @@ echo "==> Syncing extension resources..."
 rsync -a --delete \
   /tmp/feedless-convert/FeedlessSafari/Shared\ \(Extension\)/Resources/ \
   "$PROJECT_DIR/Shared (Extension)/Resources/"
+
+echo "==> Re-applying custom overlay manifest entries..."
+python3 "$SCRIPT_DIR/patch-manifest.py"
 
 echo "==> Regenerating Xcode project..."
 cd "$PROJECT_DIR"

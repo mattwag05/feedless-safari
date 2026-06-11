@@ -84,7 +84,11 @@ targets:
       - path: Shared (Extension)
         excludes:
           - "Resources/**"
+          - "Custom/**"
       - path: Shared (App)/SharedDefaults.swift
+      - path: Shared (Extension)/Custom
+        type: folder
+        buildPhase: resources
       - path: Shared (Extension)/Resources/assets
         type: folder
         buildPhase: resources
@@ -98,8 +102,6 @@ targets:
         type: folder
         buildPhase: resources
       - path: Shared (Extension)/Resources/background.js
-        buildPhase: resources
-      - path: Shared (Extension)/Resources/bridge.js
         buildPhase: resources
       - path: Shared (Extension)/Resources/icon.svg
         buildPhase: resources
@@ -134,7 +136,11 @@ targets:
       - path: Shared (Extension)
         excludes:
           - "Resources/**"
+          - "Custom/**"
       - path: Shared (App)/SharedDefaults.swift
+      - path: Shared (Extension)/Custom
+        type: folder
+        buildPhase: resources
       - path: Shared (Extension)/Resources/assets
         type: folder
         buildPhase: resources
@@ -148,8 +154,6 @@ targets:
         type: folder
         buildPhase: resources
       - path: Shared (Extension)/Resources/background.js
-        buildPhase: resources
-      - path: Shared (Extension)/Resources/bridge.js
         buildPhase: resources
       - path: Shared (Extension)/Resources/icon.svg
         buildPhase: resources

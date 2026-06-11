@@ -9,9 +9,8 @@
 /* Begin PBXBuildFile section */
 		088BE260C5665F3508B8DCFF /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BED776385A7D7E9C7DB3964 /* SettingsModel.swift */; };
 		156A5C08B9D2AF6C1FDA39EC /* assets in Resources */ = {isa = PBXBuildFile; fileRef = DDEDC1F2767AE200DCB06FCC /* assets */; };
-		1FDEDB5A30F25DD7AC1515BA /* bridge.js in Resources */ = {isa = PBXBuildFile; fileRef = 8C711A18EDFB4C41953CE564 /* bridge.js */; };
-		303CE849AAD21555541BE900 /* bridge.js in Resources */ = {isa = PBXBuildFile; fileRef = 8C711A18EDFB4C41953CE564 /* bridge.js */; };
 		3481D03E0851ACFA3460E71B /* chunks in Resources */ = {isa = PBXBuildFile; fileRef = D68A33B912555316D7F36FC1 /* chunks */; };
+		34879B1C7D9D43B4EB775AFF /* Custom in Resources */ = {isa = PBXBuildFile; fileRef = 9269484748C8756E7DEE17D5 /* Custom */; };
 		369F77F183AEDCFF41BC83D9 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 3D44F6641F3678243367E103 /* icons */; };
 		41EBD2878CD35FC19653683B /* FeedlessSafari iOS Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C241AF31B95A62C15414B79D /* FeedlessSafari iOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		59F37FFA1C64BA1E13A8A31C /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 16BB091392D33429D3638AB1 /* manifest.json */; };
@@ -23,6 +22,7 @@
 		67D3F837697ADAA7693482F0 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 19E399038BDF0611016AEE64 /* background.js */; };
 		7065845158A745A9C4AD77C2 /* FeedlessSafari macOS Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DD39A3EA02FDDC092C6CCC19 /* FeedlessSafari macOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7286E050CF25F857F5948C18 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BED776385A7D7E9C7DB3964 /* SettingsModel.swift */; };
+		881C12D9DE3F81D13D2062DE /* Custom in Resources */ = {isa = PBXBuildFile; fileRef = 9269484748C8756E7DEE17D5 /* Custom */; };
 		88D7E752917750AA1B66F51F /* icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 34200DF9DE540A26EA628372 /* icon.svg */; };
 		8C7486EEF9F77EE45AFECB03 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B623647ADF849A3575D29 /* SettingsView.swift */; };
 		8F68FD4550CAD06F2155B68E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D39AD63BC6E1C514020397 /* SettingsView.swift */; };
@@ -108,9 +108,9 @@
 		6AB98E4A0F5F524558C84687 /* FeedlessSafari iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "FeedlessSafari iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F9F24B9F3EEDA25A957573F /* FeedlessSafari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FeedlessSafari.entitlements; sourceTree = "<group>"; };
 		868BC8BEBE1CD5CE88C540D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8C711A18EDFB4C41953CE564 /* bridge.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = bridge.js; sourceTree = "<group>"; };
 		8D3D9A382898F28963241760 /* FeedlessSafari macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FeedlessSafari macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		924C4D6BCE553CA885FF0840 /* SharedDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDefaults.swift; sourceTree = "<group>"; };
+		9269484748C8756E7DEE17D5 /* Custom */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Custom; path = "Shared (Extension)/Custom"; sourceTree = SOURCE_ROOT; };
 		96B50EAA96FBAE1CCACC24C1 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		A5D39AD63BC6E1C514020397 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		B62FA712787ED8925E84CC71 /* SettingsBindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBindings.swift; sourceTree = "<group>"; };
@@ -200,6 +200,7 @@
 				DDEDC1F2767AE200DCB06FCC /* assets */,
 				D68A33B912555316D7F36FC1 /* chunks */,
 				E3EFDF25F5C1E627A29DA35C /* content-scripts */,
+				9269484748C8756E7DEE17D5 /* Custom */,
 				3D44F6641F3678243367E103 /* icons */,
 				F0790C90FA07E36F81C7B4EE /* Frameworks */,
 				A182631C81070035D0AF0914 /* Products */,
@@ -210,7 +211,6 @@
 			isa = PBXGroup;
 			children = (
 				19E399038BDF0611016AEE64 /* background.js */,
-				8C711A18EDFB4C41953CE564 /* bridge.js */,
 				34200DF9DE540A26EA628372 /* icon.svg */,
 				16BB091392D33429D3638AB1 /* manifest.json */,
 				3D68370D031F231FDA644B7B /* options.html */,
@@ -362,9 +362,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				881C12D9DE3F81D13D2062DE /* Custom in Resources */,
 				5E656751C6CCEB5F7EA6ECFA /* assets in Resources */,
 				67D3F837697ADAA7693482F0 /* background.js in Resources */,
-				1FDEDB5A30F25DD7AC1515BA /* bridge.js in Resources */,
 				3481D03E0851ACFA3460E71B /* chunks in Resources */,
 				91240C67751FA2B6FDF4EA55 /* content-scripts in Resources */,
 				5E2BA27AE75757459FEE11DF /* icon.svg in Resources */,
@@ -387,9 +387,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34879B1C7D9D43B4EB775AFF /* Custom in Resources */,
 				156A5C08B9D2AF6C1FDA39EC /* assets in Resources */,
 				F0F2A08D7C5C304E12ADA116 /* background.js in Resources */,
-				303CE849AAD21555541BE900 /* bridge.js in Resources */,
 				E90D62B23D17A66AFD6DE6E4 /* chunks in Resources */,
 				B478EE30DEEEFF8E8793AEDC /* content-scripts in Resources */,
 				88D7E752917750AA1B66F51F /* icon.svg in Resources */,

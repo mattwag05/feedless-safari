@@ -1,0 +1,42 @@
+{
+  "comment": "Input for scripts/patch-manifest.py. The bridge entry is rewritten wholesale (it must run on every platform, upstream and custom); content_scripts entries are stripped-and-readded by their Custom/ paths. Run the patcher after any upstream resync.",
+  "bridge": {
+    "matches": [
+      "*://*.facebook.com/*",
+      "*://*.instagram.com/*",
+      "*://*.linkedin.com/*",
+      "*://*.pinterest.com/*",
+      "*://*.threads.com/*",
+      "*://*.tiktok.com/*",
+      "*://*.twitter.com/*",
+      "*://*.x.com/*",
+      "*://bsky.app/*",
+      "*://github.com/*",
+      "*://m.youtube.com/*",
+      "*://music.youtube.com/*",
+      "*://news.ycombinator.com/*",
+      "*://substack.com/*",
+      "*://www.reddit.com/*",
+      "*://www.youtube.com/*"
+    ],
+    "run_at": "document_start",
+    "js": [
+      "Custom/bridge.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.threads.com/*"
+      ],
+      "run_at": "document_start",
+      "css": [
+        "Custom/threads.css"
+      ],
+      "js": [
+        "Custom/lib.js",
+        "Custom/threads.js"
+      ]
+    }
+  ]
+}

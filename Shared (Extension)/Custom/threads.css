@@ -1,0 +1,10 @@
+/* Feedless Safari — Threads (threads.com).
+ * Structural selectors only: Meta rotates generated class names, so we key on
+ * landmark roles + the URL-derived page-path attribute set by threads.js.
+ * For You lives at "/" (and "/for_you/" when explicitly addressed); Following
+ * lives at "/following/". Nav and the Create button stay usable. */
+:root[threads-hide-for-you="true"][page-path="/"] [role="main"],
+:root[threads-hide-for-you="true"][page-path="/for_you/"] [role="main"],
+:root[threads-hide-following="true"][page-path="/following/"] [role="main"] {
+  display: none !important;
+}

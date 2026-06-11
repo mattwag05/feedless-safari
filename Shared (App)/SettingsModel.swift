@@ -80,6 +80,12 @@ extension PlatformConfig {
                 SettingKey(id: "ig-short", rawKey: "local:instagram-shortform",             label: "Reels", defaultValue: true, group: .other, kind: .shortform),
             ]
         ),
+        PlatformConfig(id: "threads", name: "Threads", systemImage: "text.bubble",
+            settings: [
+                SettingKey(id: "th-foryou", rawKey: "local:threads-hide-for-you",   label: "Hide For You", defaultValue: true),
+                SettingKey(id: "th-follow", rawKey: "local:threads-hide-following", label: "Hide Following", defaultValue: true),
+            ]
+        ),
         PlatformConfig(id: "tiktok", name: "TikTok", systemImage: "music.note",
             settings: [
                 SettingKey(id: "tt-feed",   rawKey: "local:tiktok-hide-feed",            label: "Hide For You Feed", defaultValue: true),

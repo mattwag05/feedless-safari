@@ -1,22 +1,25 @@
 # FeedlessSafari 🚫📰
 
-Safari Web Extension that hides distracting feed content on 11 social media platforms. A port of the [Feedless](https://github.com/ZMensRain/Feedless) Chrome extension for macOS and iOS.
+Safari Web Extension that hides distracting feed content on 12 social media platforms. A port of the [Feedless](https://github.com/ZMensRain/Feedless) Chrome extension for macOS and iOS, plus clean-room platform support of its own (Threads).
 
 ## Supported Platforms
 
-| Platform | Feeds Blocked |
-|----------|--------------|
-| YouTube | Home, Up Next, Subscriptions, Shorts, More, Explore, End Screen |
-| YouTube Music | Home, Related |
-| Twitter / X | Home, Premium |
-| Facebook | Home, Shorts |
-| Instagram | Home, Shorts |
-| TikTok | Home, Shorts |
-| Reddit | Home |
-| LinkedIn | Home, Premium |
-| Pinterest | Home |
-| Bluesky | Home |
-| Substack | Home |
+| Platform | Surfaces Controlled |
+|----------|--------------------|
+| YouTube | Home, Subscriptions, Up Next, More From YouTube, Explore, Shorts (block/hide/show), You section, End Screen |
+| YouTube Music | Home, Related, Explore |
+| Twitter / X | Home, Trending, Who to Follow, What's Happening, Explore, Premium |
+| Facebook | Home, Gaming, Reels (block/hide/show), Marketplace, Watch |
+| Instagram | Home, Explore, Suggested Posts, Reels (block/hide/show) |
+| Threads | For You, Following |
+| TikTok | For You, Following, Explore, Video Pages (block/hide/show), Live, Search |
+| Reddit | Home, Explore, Related Posts |
+| LinkedIn | Home, "Add to Your Feed", Premium |
+| Pinterest | Home, Explore, Related Pins, Search, Boards |
+| Bluesky | Home, Trending |
+| Substack | Home, Explore, Up Next, New Bestsellers, Related |
+
+Suggestion/discovery surfaces are hidden by default; destinations you deliberately navigate to (Marketplace, Watch, search results, boards, Following, Live) are visible by default — flip any of them in the app's settings.
 
 ## Prerequisites
 
@@ -66,7 +69,9 @@ Changes sync automatically to the extension.
 ./scripts/rebuild.sh
 ```
 
-This clones the latest Feedless Chrome extension, builds it, converts to Safari, and regenerates the Xcode project.
+This clones the latest Feedless Chrome extension, builds it, converts to Safari, re-applies the custom overlay manifest entries (`scripts/patch-manifest.py`), and regenerates the Xcode project.
+
+Anything of ours that must survive a resync lives in `Shared (Extension)/Custom/` (outside the rsync `--delete` blast radius). After any manual hand-sync of `Resources/`, run `python3 scripts/patch-manifest.py` to restore the bridge + custom content-script entries in `manifest.json`.
 
 ## Project Structure
 
@@ -84,16 +89,21 @@ FeedlessSafari/
 │   └── SettingsView.swift         # NavigationView settings UI
 ├── Shared (Extension)/            # Safari extension
 │   ├── SafariWebExtensionHandler.swift  # Native → JS bridge
-│   └── Resources/                 # Content scripts, CSS, icons
-│       ├── manifest.json
+│   ├── Custom/                    # Our overlay — survives upstream resyncs
+│   │   ├── bridge.js              # UserDefaults → storage.local sync
+│   │   ├── lib.js                 # storage → :root attribute mirror
+│   │   ├── threads.{js,css}       # Clean-room Threads support
+│   │   └── manifest-additions.json  # Input for patch-manifest.py
+│   └── Resources/                 # Upstream content scripts, CSS, icons
+│       ├── manifest.json          # Patched by patch-manifest.py
 │       ├── background.js
-│       ├── bridge.js              # UserDefaults → storage.local sync
 │       ├── content-scripts/       # Per-platform feed blockers
 │       └── chunks/                # WXT build output
 ├── macOS (Extension)/             # macOS extension target
 ├── iOS (Extension)/               # iOS extension target
 └── scripts/
-    └── rebuild.sh                     # Full rebuild from upstream
+    ├── rebuild.sh                 # Full rebuild from upstream
+    └── patch-manifest.py          # Re-applies Custom/ manifest entries
 ```
 
 ## License
