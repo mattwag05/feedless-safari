@@ -28,8 +28,8 @@
     { hosts: ["facebook.com"], rules: [{ attr: "facebook-hide-feed", paths: ["/"], anchor: '[role="main"]' }] },
     { hosts: ["instagram.com"], rules: [{ attr: "instagram-hide-feed", paths: ["/"], anchor: '[role="main"]' }] },
     { hosts: ["threads.com"], rules: [
-      { attr: "threads-hide-for-you", paths: ["/", "/for_you/"], anchor: '[role="main"]' },
-      { attr: "threads-hide-following", paths: ["/following/"], anchor: '[role="main"]' },
+      { attr: "threads-hide-for-you", paths: ["/", "/for_you/"], anchor: '[role="region"]' },
+      { attr: "threads-hide-following", paths: ["/following/"], anchor: '[role="region"]' },
     ] },
     { hosts: ["tiktok.com"], rules: [{ attr: "tiktok-hide-feed", paths: ["/"], anchor: "main article" }] },
     { hosts: ["www.reddit.com"], rules: [{ attr: "reddit-hide-feed", paths: ["/"], anchor: ".subgrid-container" }] },
