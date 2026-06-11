@@ -1,0 +1,9 @@
+/* Feedless Safari — Hacker News (news.ycombinator.com).
+ * Hides the front-page story list (story rows, their subtext lines, and the
+ * "More" pagination link) on the ranked feed paths only. Deliberate
+ * destinations — /newest, /ask, /show, /jobs, /item, profiles — stay visible.
+ * HN's markup is stable: each story is a tr.athing followed by a subtext tr. */
+:root[hackernews-hide-feed="true"]:is([page-path="/"], [page-path="/news/"], [page-path="/front/"])
+  :is(tr.athing, tr.athing + tr, a.morelink) {
+  display: none !important;
+}

@@ -1,0 +1,10 @@
+/* Feedless Safari — GitHub (github.com).
+ * Hides the logged-in home activity feed at / and /dashboard. Several
+ * candidate containers are listed because GitHub has shuffled the dashboard
+ * markup over the years (#dashboard column, #dashboard-feed, and the
+ * <feed-container> web component that lazy-loads the "For you" feed).
+ * Repos, issues, PRs, and the logged-out homepage are untouched. */
+:root[github-hide-home-feed="true"]:is([page-path="/"], [page-path="/dashboard/"])
+  :is(#dashboard-feed, feed-container, #dashboard) {
+  display: none !important;
+}

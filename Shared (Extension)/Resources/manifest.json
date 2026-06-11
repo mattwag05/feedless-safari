@@ -209,6 +209,32 @@
         "Custom/lib.js",
         "Custom/threads.js"
       ]
+    },
+    {
+      "matches": [
+        "*://news.ycombinator.com/*"
+      ],
+      "run_at": "document_start",
+      "css": [
+        "Custom/hackernews.css"
+      ],
+      "js": [
+        "Custom/lib.js",
+        "Custom/hackernews.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://github.com/*"
+      ],
+      "run_at": "document_start",
+      "css": [
+        "Custom/github.css"
+      ],
+      "js": [
+        "Custom/lib.js",
+        "Custom/github.js"
+      ]
     }
   ]
 }

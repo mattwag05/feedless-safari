@@ -12,6 +12,10 @@
   Bluesky (Trending), LinkedIn ("Add to Your Feed"), YouTube Music (Explore).
 - **Threads (threads.com) support** — hide For You and Following feeds
   independently (clean-room overlay, not from upstream).
+- **Hacker News support** — hide the ranked front-page story list (`/`,
+  `/news`, `/front`); /newest, /ask, /show, /jobs and item pages stay visible.
+- **GitHub support** — hide the logged-in home activity feed at `/` and
+  `/dashboard`; repos, issues, PRs and the logged-out homepage are untouched.
 - Settings UI group headers (Feeds / Discovery / Other) on platforms with 4+
   toggles.
 - Custom overlay architecture (`Shared (Extension)/Custom/` +

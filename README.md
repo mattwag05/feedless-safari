@@ -1,6 +1,6 @@
 # FeedlessSafari 🚫📰
 
-Safari Web Extension that hides distracting feed content on 12 social media platforms. A port of the [Feedless](https://github.com/ZMensRain/Feedless) Chrome extension for macOS and iOS, plus clean-room platform support of its own (Threads).
+Safari Web Extension that hides distracting feed content on 14 platforms. A port of the [Feedless](https://github.com/ZMensRain/Feedless) Chrome extension for macOS and iOS, plus clean-room platform support of its own (Threads, Hacker News, GitHub).
 
 ## Supported Platforms
 
@@ -18,6 +18,8 @@ Safari Web Extension that hides distracting feed content on 12 social media plat
 | Pinterest | Home, Explore, Related Pins, Search, Boards |
 | Bluesky | Home, Trending |
 | Substack | Home, Explore, Up Next, New Bestsellers, Related |
+| Hacker News | Front page stories |
+| GitHub | Home activity feed |
 
 Suggestion/discovery surfaces are hidden by default; destinations you deliberately navigate to (Marketplace, Watch, search results, boards, Following, Live) are visible by default — flip any of them in the app's settings.
 

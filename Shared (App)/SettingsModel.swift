@@ -134,6 +134,16 @@ extension PlatformConfig {
                 SettingKey(id: "ss-rel",  rawKey: "local:substack-hide-related",              label: "Hide Related", defaultValue: true, group: .discovery),
             ]
         ),
+        PlatformConfig(id: "hackernews", name: "Hacker News", systemImage: "flame",
+            settings: [
+                SettingKey(id: "hn-feed", rawKey: "local:hackernews-hide-feed", label: "Hide Front Page Stories", defaultValue: true),
+            ]
+        ),
+        PlatformConfig(id: "github", name: "GitHub", systemImage: "chevron.left.forwardslash.chevron.right",
+            settings: [
+                SettingKey(id: "gh-feed", rawKey: "local:github-hide-home-feed", label: "Hide Home Feed", defaultValue: true),
+            ]
+        ),
         PlatformConfig(id: "youtube_music", name: "YouTube Music", systemImage: "music.note.tv",
             settings: [
                 SettingKey(id: "ym-feed", rawKey: "local:youtube_music-hide-feed",         label: "Hide Home Feed", defaultValue: true),
