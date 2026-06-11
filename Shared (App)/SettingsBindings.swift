@@ -15,6 +15,7 @@ extension PlatformConfig {
                 }
             }
         }
+        QuoteWidget.seedDefaults()
     }
 
     /// Shortform keys are tri-state strings (`block`/`hide`/`show`). Earlier app

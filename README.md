@@ -23,6 +23,8 @@ Safari Web Extension that hides distracting feed content on 14 platforms. A port
 
 Suggestion/discovery surfaces are hidden by default; destinations you deliberately navigate to (Marketplace, Watch, search results, boards, Following, Live) are visible by default — flip any of them in the app's settings.
 
+Where a home feed is hidden, a **quote widget** takes its place — public-domain quotes about attention and time, rotating per page load (or per session / daily), with your own custom quotes addable in the app.
+
 ## Prerequisites
 
 - **macOS 13+** (for macOS app) or **iOS 15+** (for iOS app)

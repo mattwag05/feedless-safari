@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		088BE260C5665F3508B8DCFF /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BED776385A7D7E9C7DB3964 /* SettingsModel.swift */; };
+		0D2E119A9B711E802D3BE031 /* QuoteLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22994897D7964FD80A4A5AF4 /* QuoteLibrary.swift */; };
+		14DADF0D76D4ADC88ED469E5 /* QuoteEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30ADB081CE8320528B80D0 /* QuoteEditorView.swift */; };
 		156A5C08B9D2AF6C1FDA39EC /* assets in Resources */ = {isa = PBXBuildFile; fileRef = DDEDC1F2767AE200DCB06FCC /* assets */; };
 		3481D03E0851ACFA3460E71B /* chunks in Resources */ = {isa = PBXBuildFile; fileRef = D68A33B912555316D7F36FC1 /* chunks */; };
 		34879B1C7D9D43B4EB775AFF /* Custom in Resources */ = {isa = PBXBuildFile; fileRef = 9269484748C8756E7DEE17D5 /* Custom */; };
 		369F77F183AEDCFF41BC83D9 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 3D44F6641F3678243367E103 /* icons */; };
 		41EBD2878CD35FC19653683B /* FeedlessSafari iOS Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C241AF31B95A62C15414B79D /* FeedlessSafari iOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5261801E63F0310C463A9ECC /* QuoteEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30ADB081CE8320528B80D0 /* QuoteEditorView.swift */; };
 		59F37FFA1C64BA1E13A8A31C /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 16BB091392D33429D3638AB1 /* manifest.json */; };
 		5BD75046740E411345AAB776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC104523D667988C74BA810C /* Assets.xcassets */; };
 		5D1BDD3C14F468D1B08EE609 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = 3D68370D031F231FDA644B7B /* options.html */; };
@@ -46,6 +49,7 @@
 		E90D62B23D17A66AFD6DE6E4 /* chunks in Resources */ = {isa = PBXBuildFile; fileRef = D68A33B912555316D7F36FC1 /* chunks */; };
 		EE1B05705EFAB4289C5ABFE9 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B50EAA96FBAE1CCACC24C1 /* SafariServices.framework */; };
 		F0F2A08D7C5C304E12ADA116 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 19E399038BDF0611016AEE64 /* background.js */; };
+		F5C258D6822E19680BCD71B5 /* QuoteLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22994897D7964FD80A4A5AF4 /* QuoteLibrary.swift */; };
 		F6B2B205B52E4D1B7F18C701 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 3D44F6641F3678243367E103 /* icons */; };
 		F9AB3EC5417706DB98B6EF02 /* SharedDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924C4D6BCE553CA885FF0840 /* SharedDefaults.swift */; };
 /* End PBXBuildFile section */
@@ -99,6 +103,7 @@
 		1BED776385A7D7E9C7DB3964 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		20186AC9B8809FB29F7AAFB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21BB50742BFE4461C7C02C2A /* FeedlessSafari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FeedlessSafari.entitlements; sourceTree = "<group>"; };
+		22994897D7964FD80A4A5AF4 /* QuoteLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteLibrary.swift; sourceTree = "<group>"; };
 		252119F957D346359C8951BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34200DF9DE540A26EA628372 /* icon.svg */ = {isa = PBXFileReference; path = icon.svg; sourceTree = "<group>"; };
 		38EAAC194C937679E1F94549 /* SettingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRow.swift; sourceTree = "<group>"; };
@@ -121,6 +126,7 @@
 		DDEDC1F2767AE200DCB06FCC /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = "Shared (Extension)/Resources/assets"; sourceTree = SOURCE_ROOT; };
 		E3EFDF25F5C1E627A29DA35C /* content-scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "content-scripts"; path = "Shared (Extension)/Resources/content-scripts"; sourceTree = SOURCE_ROOT; };
 		F3ECCD83E3E44F9EBE51FDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FA30ADB081CE8320528B80D0 /* QuoteEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteEditorView.swift; sourceTree = "<group>"; };
 		FC104523D667988C74BA810C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				FC104523D667988C74BA810C /* Assets.xcassets */,
+				FA30ADB081CE8320528B80D0 /* QuoteEditorView.swift */,
+				22994897D7964FD80A4A5AF4 /* QuoteLibrary.swift */,
 				38EAAC194C937679E1F94549 /* SettingRow.swift */,
 				B62FA712787ED8925E84CC71 /* SettingsBindings.swift */,
 				1BED776385A7D7E9C7DB3964 /* SettingsModel.swift */,
@@ -434,6 +442,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5440ADF12F55A84C3D810BB /* AppDelegate.swift in Sources */,
+				5261801E63F0310C463A9ECC /* QuoteEditorView.swift in Sources */,
+				F5C258D6822E19680BCD71B5 /* QuoteLibrary.swift in Sources */,
 				B4FD312873328026DAE8FE23 /* SettingRow.swift in Sources */,
 				91A225EFFDEEF7CD4C5EC9AE /* SettingsBindings.swift in Sources */,
 				7286E050CF25F857F5948C18 /* SettingsModel.swift in Sources */,
@@ -447,6 +457,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6E93F15FC3E7B4F1A22D900 /* AppDelegate.swift in Sources */,
+				14DADF0D76D4ADC88ED469E5 /* QuoteEditorView.swift in Sources */,
+				0D2E119A9B711E802D3BE031 /* QuoteLibrary.swift in Sources */,
 				AE240D4B2B7E128CA6626E39 /* SettingRow.swift in Sources */,
 				A701358895935CB9C434EEEC /* SettingsBindings.swift in Sources */,
 				088BE260C5665F3508B8DCFF /* SettingsModel.swift in Sources */,

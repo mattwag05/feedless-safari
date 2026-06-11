@@ -16,6 +16,10 @@
   `/news`, `/front`); /newest, /ask, /show, /jobs and item pages stay visible.
 - **GitHub support** — hide the logged-in home activity feed at `/` and
   `/dashboard`; repos, issues, PRs and the logged-out homepage are untouched.
+- **Quote widget** — shows a public-domain quote card where a hidden home feed
+  used to be, on all 14 platforms. Rotation per page load (default), per
+  browsing session, or daily; ↻ button for a new quote; add your own quotes in
+  the app (iOS sheet / macOS inline editor); disable entirely from Settings.
 - Settings UI group headers (Feeds / Discovery / Other) on platforms with 4+
   toggles.
 - Custom overlay architecture (`Shared (Extension)/Custom/` +

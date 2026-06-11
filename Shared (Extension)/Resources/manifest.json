@@ -235,6 +235,34 @@
         "Custom/lib.js",
         "Custom/github.js"
       ]
+    },
+    {
+      "matches": [
+        "*://*.facebook.com/*",
+        "*://*.instagram.com/*",
+        "*://*.linkedin.com/*",
+        "*://*.pinterest.com/*",
+        "*://*.threads.com/*",
+        "*://*.tiktok.com/*",
+        "*://*.twitter.com/*",
+        "*://*.x.com/*",
+        "*://bsky.app/*",
+        "*://github.com/*",
+        "*://m.youtube.com/*",
+        "*://music.youtube.com/*",
+        "*://news.ycombinator.com/*",
+        "*://substack.com/*",
+        "*://www.reddit.com/*",
+        "*://www.youtube.com/*"
+      ],
+      "run_at": "document_idle",
+      "css": [
+        "Custom/quote-widget.css"
+      ],
+      "js": [
+        "Custom/quotes.js",
+        "Custom/quote-widget.js"
+      ]
     }
   ]
 }
