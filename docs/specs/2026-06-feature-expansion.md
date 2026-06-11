@@ -1,6 +1,6 @@
 # Spec: FeedlessSafari Feature Expansion (2026-06)
 
-**Status:** Draft
+**Status:** Implemented (2026-06-11) — all four milestones landed. Implementation amendments: overlay lives at `Shared (Extension)/Custom/` (plain JS/CSS, no TS build step); curated quotes ship in the extension as `Custom/quotes.js` rather than app-side JSON over the message bus; GitHub needs no logged-in detection (logged-out homepage lacks the feed container).
 **Author:** Matthew Wagner
 **Inspiration:** [jordwest/news-feed-eradicator](https://github.com/jordwest/news-feed-eradicator) — features observed, **not copied**
 **License posture:** MIT (this project), clean-room reimplementation throughout
