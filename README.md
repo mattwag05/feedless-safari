@@ -1,6 +1,6 @@
 # FeedlessSafari 🚫📰
 
-Safari Web Extension that hides distracting feed content on 14 platforms. A port of the [Feedless](https://github.com/ZMensRain/Feedless) Chrome extension for macOS and iOS, plus clean-room platform support of its own (Threads, Hacker News, GitHub).
+Safari Web Extension that hides distracting feed content on 13 platforms (the manifest matches 14 hosts because Twitter/X is two domains for one platform). A port of the [Feedless](https://github.com/ZMensRain/Feedless) Chrome extension for macOS and iOS, plus clean-room platform support of its own (Threads, Hacker News, GitHub).
 
 ## Supported Platforms
 

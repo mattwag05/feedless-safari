@@ -1,6 +1,6 @@
 # CLAUDE.md — feedless-safari
 
-Safari Web Extension (macOS + iOS) that hides feeds on 12 social platforms. Port of the upstream Feedless Chrome extension plus clean-room overlay platforms of our own. SwiftUI host app + JS/CSS content scripts.
+Safari Web Extension (macOS + iOS) that hides feeds on 13 platforms (Twitter/X counted once; `PlatformConfig.all` in `Shared (App)/SettingsModel.swift` is the source of truth for this count). Port of the upstream Feedless Chrome extension plus clean-room overlay platforms of our own. SwiftUI host app + JS/CSS content scripts.
 
 ## Build & regenerate flow
 
